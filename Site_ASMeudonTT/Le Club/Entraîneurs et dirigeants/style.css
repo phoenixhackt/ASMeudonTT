@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+}
+
+/* Coaches Styles */
+.coaches {
+  background-color: #eee;
+  padding: 20px;
+}
+
+.coaches h2 {
+  margin-top: 0;
+}
+
+.coach {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.coach img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Managers Styles */
+.managers {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.managers h2 {
+  margin-top: 0;
+}
+
+.manager {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.manager img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
