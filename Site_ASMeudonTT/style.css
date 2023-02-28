@@ -1,0 +1,229 @@
+/* ========== FONTS ========== */
+@font-face {
+  font-family: "Baloo_Regular";
+  src: url(Fonts/static/BalooThambi2-Regular.ttf);
+}
+@font-face {
+  font-family: "Baloo_Medium";
+  src: url(Fonts/static/BalooThambi2-Medium.ttf);
+}
+@font-face {
+  font-family: "Baloo_SemiBold";
+  src: url(Fonts/static/BalooThambi2-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Baloo_Bold";
+  src: url(Fonts/static/BalooThambi2-Bold.ttf);
+}
+@font-face {
+  font-family: "Baloo_ExtraBold";
+  src: url(Fonts/static/BalooThambi2-ExtraBold.ttf);
+}
+
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ========== BODY ========== */
+body {
+  background-color: #f3f3f3;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-color: #e5e5e5;
+  height: 95px;
+}
+.asMeudon {
+  font-size: 44px;
+  font-family: "Baloo_ExtraBold", Arial, Helvetica, sans-serif;
+  padding-top: 13px;
+  margin-left: 45px;
+  float: left;
+}
+
+#asMeudon1 {
+  color: #312783;
+}
+
+#asMeudon2 {
+  color: #e30613;
+}
+
+/* BARRE DE NAVIGTION */
+nav {
+  z-index: 10;
+  position: relative;
+  padding-top: 10px;
+}
+
+.navbar {
+  position: absolute;
+  justify-content: space-around;
+  font-family: "Baloo_SemiBold", Arial, Helvetica, sans-serif;
+  text-align: center;
+  right: 45px;
+}
+
+.navbar a {
+  font-size: 24px;
+  padding: 18px 0;
+  display: block;
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.navbar li {
+  height: auto;
+  float: left;
+  width: 220px;
+  font-size: 20px;
+}
+
+#buttonInscription {
+  background-color: #d4000d;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 8px;
+  color: white;
+  margin-left: 10px;
+}
+
+#buttonInscription:hover {
+  background-color: #ed0010;
+}
+
+.navbar li ul {
+  display: none;
+}
+
+.navbar li ul li a:hover {
+  background-color: #d7d7d7;
+}
+
+.navbar li:hover ul {
+  display: block;
+  cursor: pointer;
+}
+
+.navbar li a:hover {
+  transition: 0.2s;
+  background-color: #d7d7d7;
+}
+
+.navbar li ul li {
+  background-color: #e5e5e5;
+  height: auto;
+}
+
+#liAccueil {
+  width: 150px;
+}
+
+#imgContent {
+  height: 420px;
+  background-image: url(images/accueil.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.arrow {
+  width: 50px;
+  position: absolute;
+  top: 18vw;
+}
+
+#arrowLeft {
+  left: 30px;
+}
+
+#arrowRight {
+  right: 30px;
+}
+
+/* ========== NOS ACTUALITÉ ========== */
+
+.titreRubrique {
+  font-size: 36px;
+  font-family: "Baloo_ExtraBold", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.titreCategorie {
+  font-size: 32px;
+  font-family: "Baloo_ExtraBold", Arial, Helvetica, sans-serif;
+}
+
+.texteRubrique {
+  font-size: 24px;
+  font-family: "Baloo_Regular";
+  text-align: justify;
+}
+
+#actualite {
+  margin-top: 10px;
+  margin-left: 40px;
+  width: 56%;
+  float: left;
+}
+
+#separationActu {
+  height: 0px;
+  border: 1px solid #434343;
+}
+
+#actuContent {
+  margin-top: 18px;
+  display: flex;
+}
+
+#imgActu {
+  width: 375px;
+  height: 250px;
+}
+
+#texteActu {
+  width: 53%;
+  float: right;
+}
+
+/* ========== À VENIR ========== */
+#aVenir {
+  float: right;
+  margin-top: 10px;
+  margin-right: 50px;
+  width: 30%;
+}
+
+#separationEvent {
+  height: 0px;
+  border: 1px solid #434343;
+}
+
+#event {
+  width: 92%;
+}
+
+.titreEvent {
+  font-size: 26px;
+  font-family: "Baloo_ExtraBold", Arial, Helvetica, sans-serif;
+}
+
+#evenement1,
+#evenement2,
+#evenement3 {
+  margin-bottom: 30px;
+}
+
+#evenement1 {
+  margin-top: 18px;
+}
