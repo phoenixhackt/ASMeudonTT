@@ -1,0 +1,91 @@
+/* ========== HEADER ========== */
+header {
+  background-color: #e5e5e5;
+  height: 95px;
+}
+.asMeudon {
+  font-size: 44px;
+  font-family: "Baloo_ExtraBold", Arial, Helvetica, sans-serif;
+  padding-top: 13px;
+  margin-left: 45px;
+  float: left;
+}
+
+#asMeudon1 {
+  color: #312783;
+}
+
+#asMeudon2 {
+  color: #e30613;
+}
+
+/* BARRE DE NAVIGTION */
+nav {
+  z-index: 10;
+  position: relative;
+  padding-top: 10px;
+}
+
+.navbar {
+  position: absolute;
+  justify-content: space-around;
+  font-family: "Baloo_SemiBold", Arial, Helvetica, sans-serif;
+  text-align: center;
+  right: 45px;
+}
+
+.navbar a {
+  font-size: 24px;
+  padding: 18px 0;
+  display: block;
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.navbar li {
+  height: auto;
+  float: left;
+  width: 220px;
+  font-size: 20px;
+}
+
+#buttonInscription {
+  background-color: #d4000d;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 8px;
+  color: white;
+  margin-left: 10px;
+}
+
+#buttonInscription:hover {
+  background-color: #ed0010;
+}
+
+.navbar li ul {
+  display: none;
+}
+
+.navbar li ul li a:hover {
+  background-color: #d7d7d7;
+}
+
+.navbar li:hover ul {
+  display: block;
+  cursor: pointer;
+}
+
+.navbar li a:hover {
+  transition: 0.2s;
+  background-color: #d7d7d7;
+}
+
+.navbar li ul li {
+  background-color: #e5e5e5;
+  height: auto;
+}
+
+#liAccueil {
+  width: 150px;
+}
