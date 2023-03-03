@@ -26,6 +26,10 @@ nav {
   padding-top: 10px;
 }
 
+nav li {
+  list-style: none;
+}
+
 .navbar {
   position: absolute;
   justify-content: space-around;
