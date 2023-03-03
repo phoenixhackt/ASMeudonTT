@@ -197,3 +197,24 @@ footer div ul#second li div img {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
+/* ========== MEDIA QUERRY ========== */
+@media screen and (max-width: 1400px) {
+  #actualite {
+    float: none;
+    width: auto;
+    margin-right: 40px;
+  }
+
+  #imgActu {
+    width: 30%;
+  }
+
+  #texteActu {
+    width: 66%;
+  }
+
+  #aVenir {
+    float: none;
+  }
+}
