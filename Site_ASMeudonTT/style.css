@@ -202,19 +202,64 @@ footer div ul#second li div img {
 @media screen and (max-width: 1400px) {
   #actualite {
     float: none;
-    width: auto;
-    margin-right: 40px;
+    width: 95%;
+    margin: auto auto 50px auto;
   }
 
   #imgActu {
-    width: 30%;
+    width: 25%;
   }
 
   #texteActu {
-    width: 66%;
+    width: 73%;
   }
 
   #aVenir {
     float: none;
+    width: 95%;
+    margin: auto;
+  }
+
+  #event {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+  }
+
+  #evenement1,
+  #evenement2,
+  #evenement3 {
+    margin: 18px 0;
+    width: 27%;
+  }
+
+  #titreVideo {
+    margin-top: 40px;
+  }
+
+  #inscription {
+    width: auto;
+    margin: auto;
+  }
+
+  #inscriptionDiv {
+    margin: 150px 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #categorie {
+    display: block;
+    margin-top: 60px;
+  }
+
+  .categorieDiv {
+    width: 70%;
+    margin: 30px auto;
+  }
+
+  .categorieH3 {
+    font-size: 24px;
   }
 }
