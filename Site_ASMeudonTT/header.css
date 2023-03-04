@@ -20,13 +20,13 @@ header {
 }
 
 /* BARRE DE NAVIGTION */
-#nav1 {
+nav {
   z-index: 10;
   position: relative;
   padding-top: 10px;
 }
 
-#nav1 li {
+nav li {
   list-style: none;
 }
 
@@ -94,26 +94,8 @@ header {
   width: 150px;
 }
 
-@media screen and (max-width: 1200px) {
-  .navbar li {
-    width: 180px;
-  }
-
-  #buttonInscription {
-    margin-left: 5px;
-  }
-
-  .navbar {
-    right: 25px;
-  }
-}
-
 @media screen and (max-width: 1400px) {
-  .navbar li {
-    width: 200px;
-  }
-
-  .navbar {
-    right: 10px;
+  nav {
+    display: none;
   }
 }
