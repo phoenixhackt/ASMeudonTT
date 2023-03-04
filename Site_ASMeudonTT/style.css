@@ -252,6 +252,15 @@ footer div ul#second li div img {
   }
 }
 
+@media screen and (max-width: 1150px) {
+  #evenement1,
+  #evenement2,
+  #evenement3 {
+    margin: 18px 0;
+    width: 30%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #categorie {
     display: block;
