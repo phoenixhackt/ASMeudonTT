@@ -113,12 +113,9 @@ video {
 }
 
 /* ========== BOUTON INSCRITION ========== */
-#inscriptionDiv {
-  margin: 200px 0;
-}
 
 #inscription {
-  background-color: red;
+  background-color: #d4000d;
   width: 30%;
   padding: 10px;
   font-size: 36px;
@@ -126,7 +123,7 @@ video {
   color: white;
   text-align: center;
   display: block;
-  margin: auto;
+  margin: 175px auto;
   border: none;
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.74);
@@ -135,6 +132,10 @@ video {
 #inscription a {
   color: white;
   text-decoration: underline;
+}
+
+#inscription a:hover {
+  background-color: #ed0010;
 }
 
 /* ========== FOOTER ========== */
@@ -239,12 +240,15 @@ footer div ul#second li div img {
   }
 
   #inscription {
-    width: auto;
-    margin: auto;
+    min-width: 430px;
   }
 
   #inscriptionDiv {
     margin: 150px 0;
+  }
+
+  video {
+    width: 70%;
   }
 }
 
