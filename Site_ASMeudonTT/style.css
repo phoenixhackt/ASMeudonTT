@@ -138,67 +138,6 @@ video {
   background-color: #ed0010;
 }
 
-/* ========== FOOTER ========== */
-footer {
-  background-color: #e5e5e5;
-  display: flex;
-  justify-content: space-around;
-  padding: 30px 0;
-}
-
-footer h4 {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-family: "Baloo_Bold";
-}
-
-footer div ul {
-  font-size: 20px;
-}
-
-#first,
-#third {
-  margin-top: 10px;
-}
-
-#second {
-  margin-top: 20px;
-}
-
-#third {
-  display: flex;
-  justify-content: space-around;
-}
-
-footer div ul img {
-  width: 30px;
-}
-
-#separationMenu {
-  border: 1px solid #434343;
-  width: 52px;
-}
-
-#separationContact {
-  border: 1px solid #434343;
-  width: 162px;
-}
-
-#separationWeb {
-  border: 1px solid #434343;
-  width: 121px;
-}
-
-#one,
-#two {
-  display: flex;
-}
-
-footer div ul#second li div img {
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
 /* ========== MEDIA QUERRY ========== */
 @media screen and (max-width: 1400px) {
   #actualite {
