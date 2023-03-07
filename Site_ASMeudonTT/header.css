@@ -91,10 +91,10 @@ nav li {
 }
 
 #imgBurger {
-  width: 50px;
+  width: 40px;
   position: absolute;
-  top: 25px;
-  right: 30px;
+  top: 30px;
+  right: 35px;
   display: none;
 }
 
