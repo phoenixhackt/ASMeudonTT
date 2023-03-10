@@ -148,6 +148,7 @@ video {
 
   #imgActu {
     width: 25%;
+    min-width: 240px;
   }
 
   #texteActu {
@@ -200,9 +201,37 @@ video {
   }
 }
 
+@media screen and (max-width: 1015px) {
+  #aVenir {
+    display: block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    width: 30%;
+  }
+
+  #event {
+    display: block;
+  }
+
+  #evenement1,
+  #evenement2,
+  #evenement3 {
+    width: 100%;
+  }
+
+  video {
+    width: 55%;
+  }
+
+  #imgActu {
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #categorie {
     display: block;
+    float: right;
     margin-top: 60px;
   }
 
