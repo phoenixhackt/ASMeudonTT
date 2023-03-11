@@ -98,12 +98,70 @@ nav li {
   display: none;
 }
 
+/* Sidenav menu */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -250px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
+  transition: right 0.5s ease;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidenav menu links */
+#divSidenav {
+  display: none;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+/* Active class */
+.sidenav.active {
+  right: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.burger-icon img {
+  display: none;
+  width: 55px;
+  margin: 22px 20px;
+  float: right;
+}
+
 @media screen and (max-width: 1500px) {
   nav {
     display: none;
   }
 
-  #imgBurger {
+  #divSidenav,
+  .burger-icon img {
     display: block;
   }
 }

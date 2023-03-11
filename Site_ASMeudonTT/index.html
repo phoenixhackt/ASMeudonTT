@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" />
+    <script defer src="header.js"></script>
     <title>Accueil | AS Meudon TT</title>
   </head>
   <body>
@@ -60,9 +61,22 @@
           </li>
         </ul>
       </nav>
-      <a href="">
-        <img id="imgBurger" src="images/menu-btn.png" alt="" />
-      </a>
+      <div class="divSidenav">
+        <div id="mySidenav" class="sidenav">
+          <a id="closeBtn" href="#" class="close">&times;</a>
+          <ul>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Nos services</a></li>
+            <li><a href="#">Témoignages</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <a href="#" id="openBtn">
+          <div class="burger-icon">
+            <img src="images/icon-burger.png" />
+          </div>
+        </a>
+      </div>
     </header>
 
     <img id="imgAccueil" src="images/accueil.jpeg" alt="" />
