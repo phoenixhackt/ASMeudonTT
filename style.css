@@ -134,7 +134,7 @@ video {
   text-decoration: underline;
 }
 
-#inscription a:hover {
+#inscription:hover {
   background-color: #ed0010;
 }
 
@@ -222,9 +222,6 @@ video {
 
   video {
     width: 55%;
-  }
-
-  #imgActu {
   }
 }
 
