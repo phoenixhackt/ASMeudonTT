@@ -8,82 +8,110 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+    <link rel="stylesheet" href="../../reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../header.css" />
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon" />
+    <script defer src="../../header.js"></script>
   </head>
   <body>
-    <header>
-      <h1 class="animat_animated animate__backInDown">Table Tennis Club</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Coaches and Managers</a></li>
+    <header class="header">
+      <div class="asMeudon">
+        <a href="">
+          <span id="asMeudon1">AS</span>
+          <span id="asMeudon2">Meudon TT</span>
+        </a>
+      </div>
+      <nav id="nav1">
+        <ul class="navbar">
+          <li id="liAccueil">
+            <a href="../../index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="#">Le Club</a>
+            <ul>
+              <li><a href="#">Inscriptions</a></li>
+              <li><a href="../Lieu/lieu.html">Lieu</a></li>
+              <li>
+                <a href="eetd.html"
+                  >Entraîneurs et dirigeants</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Compétitions</a>
+            <ul>
+              <li><a href="#">Compétitions Individuelles</a></li>
+              <li><a href="#">Championnats par équipes</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Plus</a>
+            <ul>
+              <li><a href="#">Stages</a></li>
+              <li><a href="#">Horaires</a></li>
+              <li><a href="../../Plus/Contact/contact.html">Contact</a></li>
+            </ul>
+          </li>
+          <li>
+            <a id="buttonInscription" href="#">S'inscrire</a>
+          </li>
         </ul>
       </nav>
+      <div class="divSidenav">
+        <div id="mySidenav" class="sidenav">
+          <a id="closeBtn" href="#" class="close">&times;</a>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Le Club</a></li>
+            <li><a href="#">Compétitions</a></li>
+            <li><a href="#">Plus</a></li>
+          </ul>
+        </div>
+        <a href="#" id="openBtn">
+          <div class="burger-icon">
+            <img src="../../images/icon-burger.png" />
+          </div>
+        </a>
+      </div>
     </header>
 
     <main>
       <section class="coaches">
-        <h2>Coaches</h2>
+        <h2>Entraîneurs</h2>
         <div class="coach">
-          <img src="coach1.jpg" alt="Coach 1" />
-          <h3>Coach 1</h3>
+          <img src="../../images/laurent.webp" alt="Coach 1" />
+          <h3>Entraîneur principal</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales
-            euismod leo, eget maximus urna feugiat at.
+            Laurent Pruvost
+            <a href="tel:0615051554">06 15 05 15 54</a>
           </p>
         </div>
         <div class="coach">
-          <img src="coach2.jpg" alt="Coach 2" />
-          <h3>Coach 2</h3>
+          <img src="../../images/jeremy.webp" alt="Coach 2" />
+          <h3>Entraîneur</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales
-            euismod leo, eget maximus urna feugiat at.
-          </p>
-        </div>
-        <div class="coach">
-          <img src="coach3.jpg" alt="Coach 3" />
-          <h3>Coach 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales
-            euismod leo, eget maximus urna feugiat at.
-          </p>
-        </div>
-        <div class="coach">
-          <img src="coach4.jpg" alt="Coach 4" />
-          <h3>Coach 4</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales
-            euismod leo, eget maximus urna feugiat at.
-          </p>
-        </div>
-        <div class="coach">
-          <img src="coach5.jpg" alt="Coach 5" />
-          <h3>Coach 5</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales
-            euismod leo, eget maximus urna feugiat at.
+            Jeremy Rousseau
           </p>
         </div>
       </section>
 
       <section class="managers">
-        <h2>Managers</h2>
+        <h2>Membres du bureau</h2>
         <div class="manager">
-          <img src="manager1.jpg" alt="Manager 1" />
-          <h3>Manager 1</h3>
+          <img src="../../images/jaouad.webp" alt="Manager 1" />
+          <h3>Président du club</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales
-            euismod leo, eget maximus urna feugiat at.
+            Jaouad Ben Larbi
+            <a href="tel:0661649008">06 61 64 90 08</a>
           </p>
         </div>
         <div class="manager">
-          <img src="manager2.jpg" alt="Manager 2" />
-          <h3>Manager 2</h3>
+          <img src="../../images/cyril.webp" alt="Manager 2" />
+          <h3>Trésorié du club</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales
-            euismod leo, eget maximus urna feugiat at.
+            Cyril Jumeau
           </p>
         </div>
       </section>
