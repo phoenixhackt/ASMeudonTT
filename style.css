@@ -46,6 +46,7 @@
 #texteActu {
   width: 53%;
   float: right;
+  max-width: 700px;
 }
 
 /* ========== À VENIR ========== */
@@ -127,6 +128,7 @@ video {
   border: none;
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.74);
+  transition: 0.3s;
 }
 
 #inscription a {
@@ -135,6 +137,7 @@ video {
 }
 
 #inscription:hover {
+  transition: 0.3s;
   background-color: #ed0010;
 }
 
@@ -203,11 +206,8 @@ video {
 
 @media screen and (max-width: 1015px) {
   #aVenir {
-    display: block;
-    float: right;
-    margin-top: 10px;
-    margin-right: 50px;
-    width: 30%;
+    margin: auto;
+    width: 95%;
   }
 
   #event {
@@ -218,18 +218,21 @@ video {
   #evenement2,
   #evenement3 {
     width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #stage {
+    margin-top: 100px;
   }
 
   video {
-    width: 55%;
+    width: 80%;
   }
-}
 
-@media screen and (max-width: 1000px) {
   #categorie {
     display: block;
-    float: right;
-    margin-top: 60px;
+    float: none;
+    margin-top: 400px;
   }
 
   .categorieDiv {
@@ -238,6 +241,52 @@ video {
   }
 
   .categorieH3 {
-    font-size: 24px;
+    font-size: 25px;
+  }
+
+  #texteActu {
+    width: 60%;
+  }
+
+  #imgActu {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #actuContent {
+    display: block;
+  }
+
+  #imgActu {
+    display: none;
+  }
+
+  #texteActu {
+    width: 100%;
+    float: none;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .asMeudon {
+    display: none;
+  }
+
+  video {
+    width: 98%;
+  }
+
+  #titreVideo {
+    font-size: 2rem;
+  }
+
+  #categorie {
+    margin-top: 70px;
+  }
+
+  .categorieH3 {
+    font-size: 1rem;
   }
 }
