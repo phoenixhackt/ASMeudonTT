@@ -290,10 +290,6 @@ video {
 }
 
 @media screen and (max-width: 430px) {
-  .asMeudon {
-    display: none;
-  }
-
   video {
     width: 98%;
   }
