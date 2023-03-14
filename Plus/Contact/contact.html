@@ -1,130 +1,89 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Contact Page - AS Meudon Tennis de Table</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="contact.css" />
-    <link rel="stylesheet" href="../../header.css" />
-    <link rel="stylesheet" href="../../reset.css" />
-    <script defer src="../../header.js"></script>
-  </head>
-  <body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>potfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../header.css">
+</head>
+<body>
     <header class="header">
-      <div class="asMeudon">
-        <a href="../../index.html">
-          <span id="asMeudon1">AS</span>
-          <span id="asMeudon2">Meudon TT</span>
-        </a>
-      </div>
-      <nav id="nav1">
-        <ul class="navbar">
-          <li id="liAccueil">
-            <a href="#">Accueil</a>
-          </li>
-          <li>
-            <a href="#">Le Club</a>
-            <ul>
-              <li><a href="#">Inscriptions</a></li>
-              <li><a href="Le Club/Lieu/lieu.html">Lieu</a></li>
-              <li>
-                <a href="Le Club/Entraîneurs et dirigeants/eetd.html"
-                  >Entraîneurs et dirigeants</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Compétitions</a>
-            <ul>
-              <li><a href="#">Compétitions Individuelles</a></li>
-              <li><a href="#">Championnats par équipes</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Plus</a>
-            <ul>
-              <li><a href="#">Stages</a></li>
-              <li><a href="#">Horaires</a></li>
-              <li><a href="Plus/Contact/contact.html">Contact</a></li>
-            </ul>
-          </li>
-          <li>
-            <a id="buttonInscription" href="#">S'inscrire</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="divSidenav">
-        <div id="mySidenav" class="sidenav">
-          <a id="closeBtn" href="#" class="close">&times;</a>
-          <ul>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Nos services</a></li>
-            <li><a href="#">Témoignages</a></li>
-            <li><a href="#">Contact</a></li>
+        <div class="asMeudon">
+          <a href="">
+            <span id="asMeudon1">AS</span>
+            <span id="asMeudon2">Meudon TT</span>
+          </a>
+        </div>
+        <nav id="nav1">
+          <ul class="navbar">
+            <li id="liAccueil">
+              <a href="../../index.html">Accueil</a>
+            </li>
+            <li>
+              <a href="#">Le Club</a>
+              <ul>
+                <li><a href="#">Inscriptions</a></li>
+                <li><a href="../../Le Club/Lieu/lieu.html">Lieu</a></li>
+                <li>
+                  <a href="../../Le Club/Entraîneurs et dirigeants/eetd.html"
+                    >Entraîneurs et dirigeants</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Compétitions</a>
+              <ul>
+                <li><a href="../../Les competitions/Compétitions individuelles/critérium.html">Compétitions Individuelles</a></li>
+                <li><a href="#">Championnats par équipes</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Plus</a>
+              <ul>
+                <li><a href="#">Stages</a></li>
+                <li><a href="#">Horaires</a></li>
+                <li><a href="../../Plus/Contact/contact.html">Contact</a></li>
+              </ul>
+            </li>
+            <li>
+              <a id="buttonInscription" href="#">S'inscrire</a>
+            </li>
           </ul>
+        </nav>
+        <div class="divSidenav">
+          <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
+            <ul>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Nos services</a></li>
+              <li><a href="#">Témoignages</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <a href="#" id="openBtn">
+            <div class="burger-icon">
+              <img src="../../images/icon-burger.png" />
+            </div>
+          </a>
         </div>
-        <a href="#" id="openBtn">
-          <div class="burger-icon">
-            <img src="../../images/icon-burger.png" />
-          </div>
-        </a>
-      </div>
-    </header>
-    <main>
-      <div id="contact-section">
-        <h2>Formulaire de contact</h2>
-        <form id="contact-form" method="POST">
-          <div class="form-group">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <div class="form-group">
-            <button type="submit">Envoyer</button>
-          </div>
-        </form>
-      </div>
-      <div id="contact-info">
-        <h2>Informations de Contact</h2>
-        <div id="coach-info">
-          <img src="laurent.webp" alt="Laurent Pruvost" />
-          <h3>Laurent Pruvost</h3>
-          <p>Entraîneur en chef</p>
-          <p>Téléphone : 06 15 05 15 54</p>
+      </header>
+    <div class="ecran">
+        <div class="carte" data-tilt>
+            <img class="logo" src="media/favicon.png">
+            <h2>AS Meudon TT</h2>
+            <p>Club de tennis de table à Meudon<br><br>Entraînement loisir <br> & <br> Entraînement compétition.</p>
+            <div class="reseau">
+                <a href="https://www.instagram.com/asmeudontennisdetable/?hl=fr"><img src="media/instagram.png"></a>
+                <a href="https://m.facebook.com/people/As-Meudon-Tennis-de-Table/100057156052613/"><img src="media/facebook.png"></a>
+                <a href="#"><img src="media/twitter.png"></a>
+                <a href="https://www.fftt.com/site/structures/by-number?number_id=08920067"><img id="fftt_icon" src="media/fftt_icon-modified.png"></a>
+            </div>
+            <a href="mailto:asmeudontt@gmail.com" class="bouton">Contactez-nous</Contactez-nous></a>
         </div>
-        <div id="social-media">
-          <h3>Réseaux Sociaux</h3>
-          <p>
-            Instagram :
-            <a href="https://www.instagram.com/asmeudontennisdetable/"
-              >Asmeudontennisdetable</a
-            >
-          </p>
-          <p>
-            Facebook :
-            <a
-              href="https://www.facebook.com/As-Meudon-Tennis-De-Table-113015063438977/"
-              >As Meudon Tennis De Table</a
-            >
-          </p>
-        </div>
-        <div id="email">
-          <h3>Email</h3>
-          <p>asmeudontt@gmail.com</p>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <p>AS Meudon Tennis de Table &copy; 2023</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+</body>
 </html>
