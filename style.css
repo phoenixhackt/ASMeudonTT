@@ -46,7 +46,6 @@
 #texteActu {
   width: 53%;
   float: right;
-  max-width: 700px;
 }
 
 /* ========== À VENIR ========== */
@@ -143,6 +142,10 @@ video {
 
 /* ========== MEDIA QUERRY ========== */
 @media screen and (max-width: 1400px) {
+  #texteActu {
+    width: 73%;
+  }
+
   #actualite {
     float: none;
     width: 95%;
@@ -152,10 +155,6 @@ video {
   #imgActu {
     width: 25%;
     min-width: 240px;
-  }
-
-  #texteActu {
-    width: 73%;
   }
 
   #aVenir {
@@ -214,6 +213,10 @@ video {
     display: block;
   }
 
+  #texteActu {
+    width: 73%;
+  }
+
   #evenement1,
   #evenement2,
   #evenement3 {
@@ -266,6 +269,23 @@ video {
     width: 100%;
     float: none;
     max-width: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .texteRubrique {
+    font-size: 18px;
+  }
+
+  .titreRubrique {
+    font-size: 28px;
+    font-family: "Baloo_ExtraBold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .titreCategorie {
+    font-size: 22px;
+    font-family: "Baloo_SemiBold", Arial, Helvetica, sans-serif;
   }
 }
 
