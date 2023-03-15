@@ -142,14 +142,23 @@ video {
 
 /* ========== MEDIA QUERRY ========== */
 @media screen and (max-width: 1400px) {
+  #inscription {
+    width: 50%;
+  }
+
+  #globalRubrique {
+    width: 90%;
+    margin: auto;
+  }
+
   #texteActu {
     width: 73%;
   }
 
   #actualite {
     float: none;
-    width: 95%;
-    margin: auto auto 50px auto;
+    width: 100%;
+    margin: auto;
   }
 
   #imgActu {
@@ -159,8 +168,7 @@ video {
 
   #aVenir {
     float: none;
-    width: 95%;
-    margin: auto;
+    width: 100%;
   }
 
   #event {
@@ -179,10 +187,6 @@ video {
 
   #titreVideo {
     margin-top: 40px;
-  }
-
-  #inscription {
-    min-width: 430px;
   }
 
   #inscriptionDiv {
@@ -257,6 +261,10 @@ video {
 }
 
 @media screen and (max-width: 900px) {
+  #inscription {
+    width: 70%;
+  }
+
   #actuContent {
     display: block;
   }
@@ -270,9 +278,19 @@ video {
     float: none;
     max-width: none;
   }
+
+  .categorieDiv {
+    width: 85%;
+    margin: 30px auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  #inscription {
+    width: 80%;
+    font-size: 30px;
+  }
+
   .texteRubrique {
     font-size: 18px;
   }
@@ -287,6 +305,10 @@ video {
     font-size: 22px;
     font-family: "Baloo_SemiBold", Arial, Helvetica, sans-serif;
   }
+
+  .categorieH3 {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -294,15 +316,7 @@ video {
     width: 98%;
   }
 
-  #titreVideo {
-    font-size: 2rem;
-  }
-
   #categorie {
     margin-top: 70px;
-  }
-
-  .categorieH3 {
-    font-size: 1rem;
   }
 }
