@@ -33,6 +33,7 @@ footer div ul {
 
 footer div ul img {
   width: 30px;
+  height: 30px;
 }
 
 #separationMenu {
@@ -58,4 +59,32 @@ footer div ul img {
 footer div ul#second li div img {
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+#web {
+  width: 125px;
+}
+
+#brNum {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    display: block;
+    height: auto;
+    padding: 40px 50px;
+  }
+
+  .marginDiv {
+    margin-top: 50px;
+  }
+
+  #brNum {
+    display: block;
+  }
+
+  #one {
+    margin-bottom: 10px;
+  }
 }
