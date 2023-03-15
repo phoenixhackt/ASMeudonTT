@@ -1,5 +1,5 @@
 main {
-  width: 500px;
+  width: 60%;
   margin: auto;
 }
 
@@ -48,9 +48,16 @@ p {
 #map {
   margin-top: 20px;
   height: 400px;
+  width: 500px;
+  margin: auto;
 }
 
 @media screen and (max-width: 1000px) {
+  main {
+    width: 90%;
+    margin: auto;
+  }
+
   h1 {
     font-size: 50px;
   }
