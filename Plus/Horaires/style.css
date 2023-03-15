@@ -1,0 +1,50 @@
+main{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    }
+    
+    main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+    }
+    
+    section {
+    margin-bottom: 2rem;
+    }
+        
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+    }
+    
+    th, td {
+    border: 1px solid #CCC;
+    padding: 0.5rem;
+    text-align: center;
+    }
+    
+    th {
+    background-color: #C00;
+    color: #FFF;
+    }
+    
+    tr:nth-child(even) {
+    background-color: #EEE;
+    }
+    
+    a {
+    color: #C00;
+    text-decoration: none;
+    }
+    
+    a:hover {
+    text-decoration: underline;
+    }
