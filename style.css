@@ -1,3 +1,13 @@
+/* ========== CURSOR ========== */
+
+* {
+  cursor:url(../../images/Table_Tennis_Cursor.png) , default!important
+}
+
+a {
+    cursor:url(../../images/Table_Tennis_Pointer.png) , pointer!important
+}
+
 /* ========== IMG ACCUEIL ========== */
 #imgAccueil {
   width: 100%;
