@@ -1,158 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Classements</title>
-    <link rel="stylesheet" href="podium.css">
-    <link rel="stylesheet" href="../../header.css">
-    <link rel="stylesheet" href="../../reset.css">
-    <link rel="stylesheet" href="../../footer.css"> 
-    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="podium.css" />
+    <link rel="stylesheet" href="../../header.css" />
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../footer.css" />
+    <link
+      rel="shortcut icon"
+      href="../../images/favicon.png"
+      type="image/x-icon"
+    />
   </head>
-  <body>
-    <header class="header">
-      <div class="asMeudon">
-        <a href="">
-          <span id="asMeudon1">AS</span>
-          <span id="asMeudon2">Meudon TT</span>
-        </a>
-      </div>
-      <nav id="nav1">
-        <ul class="navbar">
-          <li id="liAccueil">
-            <a href="../../index.html">Accueil</a>
-          </li>
-          <li>
-            <a href="#">Le Club</a>
-            <ul>
-              <li><a href="#">Inscriptions</a></li>
-              <li><a href="../../Le Club/Lieu/lieu.html">Lieu</a></li>
-              <li>
-                <a href="../../Le Club/Entraîneurs et dirigeants/entraineurs.html"
-                  >Entraîneurs et dirigeants</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Compétitions</a>
-            <ul>
-              <li><a href="../../Les competitions/Compétitions individuelles/critérium.html">Compétitions Individuelles</a></li>
-              <li><a href="#">Championnats par équipes</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Plus</a>
-            <ul>
-              <li><a href="#">Stages</a></li>
-              <li><a href="#">Horaires</a></li>
-              <li><a href="../../Plus/Contact/contact.html">Contact</a></li>
-            </ul>
-          </li>
-          <li>
-            <a id="buttonInscription" href="#">S'inscrire</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="divSidenav">
-        <div id="mySidenav" class="sidenav">
-          <a id="closeBtn" href="#" class="close">&times;</a>
+  <header class="header">
+    <div class="asMeudon">
+      <a href="">
+        <span id="asMeudon1">AS</span>
+        <span id="asMeudon2">Meudon TT</span>
+      </a>
+    </div>
+    <nav id="nav1">
+      <ul class="navbar">
+        <li id="liAccueil">
+          <a href="../../index.html">Accueil</a>
+        </li>
+        <li>
+          <a href="#">Le Club</a>
           <ul>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Nos services</a></li>
-            <li><a href="#">Témoignages</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Inscriptions</a></li>
+            <li><a href="../../Le Club/Lieu/lieu.html">Lieu</a></li>
+            <li>
+              <a href="../../Le Club/Entraîneurs et dirigeants/entraineurs.html"
+                >Entraîneurs et dirigeants</a
+              >
+            </li>
           </ul>
-        </div>
-        <a href="#" id="openBtn">
-          <div class="burger-icon">
-            <img src="../../images/icon-burger.png" />
-          </div>
-        </a>
+        </li>
+        <li>
+          <a href="#">Compétitions</a>
+          <ul>
+            <li>
+              <a
+                href="../../Les competitions/Compétitions individuelles/critérium.html"
+                >Compétitions Individuelles</a
+              >
+            </li>
+            <li><a href="#">Championnats par équipes</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Plus</a>
+          <ul>
+            <li><a href="#">Stages</a></li>
+            <li><a href="#">Horaires</a></li>
+            <li><a href="../../Plus/Contact/contact.html">Contact</a></li>
+          </ul>
+        </li>
+        <li>
+          <a id="buttonInscription" href="#">S'inscrire</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="divSidenav">
+      <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">&times;</a>
+        <ul>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Nos services</a></li>
+          <li><a href="#">Témoignages</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-    </header>
-<body>
+      <a href="#" id="openBtn">
+        <div class="burger-icon">
+          <img src="../../images/icon-burger.png" />
+        </div>
+      </a>
+    </div>
+  </header>
   <h1>Classement des meilleurs joueurs du Club</h1>
- 
-  <div class="scoreboard">
-    <div class="scoreboard__podiums">
-      <div class="scoreboard__podium js-podium" data-height="200px">
-        <div class="scoreboard__podium-base scoreboard__podium-base--second">
-          <div class="scoreboard__podium-rank">2</div>
-        </div>
-         <div class="scoreboard__podium-number">
-             Bar de Wever
-           <small><span class="js-podium-data">160</span></small>
-        </div>
-      
-      </div>
-      <div class="scoreboard__podium js-podium" data-height="250px">
-         <div class="scoreboard__podium-base scoreboard__podium-base--first">
-          <div class="scoreboard__podium-rank">1</div>
-          
-        </div>
+  <body>
+    <div class="scoreboard">
+      <div class="scoreboard__podiums">
+        <div class="scoreboard__podium js-podium" data-height="200px">
+          <div class="scoreboard__podium-base scoreboard__podium-base--second">
+            <div class="scoreboard__podium-rank">2</div>
+          </div>
           <div class="scoreboard__podium-number">
-             Charles Michel
+            Bar de Wever
+            <small><span class="js-podium-data">160</span></small>
+          </div>
+        </div>
+        <div class="scoreboard__podium js-podium" data-height="250px">
+          <div class="scoreboard__podium-base scoreboard__podium-base--first">
+            <div class="scoreboard__podium-rank">1</div>
+          </div>
+          <div class="scoreboard__podium-number">
+            Charles Michel
             <small><span class="js-podium-data">195</span></small>
-        </div>
-      </div>
-      <div class="scoreboard__podium js-podium" data-height="150px">
-         <div class="scoreboard__podium-base scoreboard__podium-base--third">
-             <div class="scoreboard__podium-rank">3</div>
-        </div>
-          <div class="scoreboard__podium-number">
-            Jan Jambon
-            <small><span class="js-podium-data">100</span></small>
+          </div>
         </div>
       </div>
     </div>
-  
-    
-</div>
-<footer>
-  <div>
-    <h4>Menu</h4>
-    <div id="separationMenu"></div>
-    <ul id="first">
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">Le Club</a></li>
-      <li><a href="#">Les Compétitions</a></li>
-      <li><a href="#">Plus</a></li>
-    </ul>
-  </div>
-  <div class="marginDiv">
-    <h4>Contactez-nous</h4>
-    <div id="separationContact"></div>
-    <ul id="second">
-      <li>
-        <div id="one">
-          <img src="../../images/phone.png" alt="" />
-          <p>
-            01 71 22 72 52 &nbsp; <br id="brNum" />
-            ou &nbsp; 06 61 64 90 08
-          </p>
-        </div>
-      </li>
-      <li>
-        <div id="two">
-          <img src="../../images/email.png" alt="" />
-          <p>asmeudontt@gmail.com</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div class="marginDiv" id="web">
-    <h4>Suivez-nous</h4>
-    <div id="separationWeb"></div>
-    <ul id="third">
-      <a href="#"><img src="../../images/twitter.png" alt="" /></a>
-      <a href="#"><img src="../../images/instagram.png" alt="" /></a>
-      <a href="#"><img src="../../images/facebook.png" alt="" /></a>
-    </ul>
-  </div>
-</footer>
-</body>
-<script src="podium.js"></script>
+    <div class="scoreboard__podium js-podium" data-height="150px">
+      <div class="scoreboard__podium-base scoreboard__podium-base--third">
+        <div class="scoreboard__podium-rank">3</div>
+      </div>
+      <div class="scoreboard__podium-number">
+        Jan Jambon
+        <small><span class="js-podium-data">100</span></small>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div>
+      <h4>Menu</h4>
+      <div id="separationMenu"></div>
+      <ul id="first">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Le Club</a></li>
+        <li><a href="#">Les Compétitions</a></li>
+        <li><a href="#">Plus</a></li>
+      </ul>
+    </div>
+    <div class="marginDiv">
+      <h4>Contactez-nous</h4>
+      <div id="separationContact"></div>
+      <ul id="second">
+        <li>
+          <div id="one">
+            <img src="../../images/phone.png" alt="" />
+            <p>
+              01 71 22 72 52 &nbsp; <br id="brNum" />
+              ou &nbsp; 06 61 64 90 08
+            </p>
+          </div>
+        </li>
+        <li>
+          <div id="two">
+            <img src="../../images/email.png" alt="" />
+            <p>asmeudontt@gmail.com</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="marginDiv" id="web">
+      <h4>Suivez-nous</h4>
+      <div id="separationWeb"></div>
+      <ul id="third">
+        <a href="#"><img src="../../images/twitter.png" alt="" /></a>
+        <a href="#"><img src="../../images/instagram.png" alt="" /></a>
+        <a href="#"><img src="../../images/facebook.png" alt="" /></a>
+      </ul>
+    </div>
+  </footer>
+  <script src="podium.js"></script>
 </html>
