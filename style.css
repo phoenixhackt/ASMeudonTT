@@ -78,6 +78,7 @@
 /* ========== VIDEO STAGE ========== */
 #stage {
   margin-left: 4%;
+  margin-top: 500px;
 }
 
 #titreVideo {
@@ -196,6 +197,10 @@ video {
   video {
     width: 70%;
   }
+
+  #stage {
+    margin-top: 100px;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -270,18 +275,34 @@ video {
   }
 
   #imgActu {
-    display: none;
+    display: block;
+    float: none;
+    width: 50%;
+    margin: auto;
   }
 
   #texteActu {
-    width: 100%;
+    text-align: left;
+    width: 50%;
+    margin: auto;
     float: none;
-    max-width: none;
+  }
+
+  .texteRubrique {
+    display: none;
   }
 
   .categorieDiv {
     width: 85%;
     margin: 30px auto;
+  }
+
+  .titreCategorie {
+    font-size: 32px;
+  }
+
+  #aVenir {
+    margin-top: 75px;
   }
 }
 
