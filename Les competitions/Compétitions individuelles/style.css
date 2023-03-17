@@ -97,3 +97,11 @@ img:hover {
 .calendar-container:hover {
 	transform: translateY(-50%) scale(1.05);
 }
+
+@media screen and (max-width: 1500px) {
+	.calendar-container {
+		position: unset;
+		margin: auto;
+		margin-top: 400px;
+	}
+}
