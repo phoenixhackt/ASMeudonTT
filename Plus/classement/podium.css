@@ -1,0 +1,43 @@
+.podium {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-place {
+  background-color: gold;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.second-place {
+  background-color: silver;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.third-place {
+  background-color: #CD7F32;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.first-place:before {
+  content: "🥇";
+  font-size: 48px;
+}
+
+.second-place:before {
+  content: "🥈";
+  font-size: 48px;
+}
+
+.third-place:before {
+  content: "🥉";
+  font-size: 48px;
+}
