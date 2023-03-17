@@ -3,6 +3,13 @@
   width: 100%;
 }
 
+#imgAccueil2 {
+  width: 60%;
+  padding: 30px;
+  margin: auto;
+  display: none;
+}
+
 /* ========== NOS ACTUALITÉ ========== */
 
 .titreRubrique {
@@ -41,6 +48,7 @@
 
 #imgActu {
   width: 45%;
+  min-width: 290px;
 }
 
 #texteActu {
@@ -164,7 +172,6 @@ video {
 
   #imgActu {
     width: 25%;
-    min-width: 240px;
   }
 
   #aVenir {
@@ -277,7 +284,7 @@ video {
   #imgActu {
     display: block;
     float: none;
-    width: 50%;
+    width: 60%;
     margin: auto;
   }
 
@@ -286,6 +293,7 @@ video {
     width: 50%;
     margin: auto;
     float: none;
+    min-width: 290px;
   }
 
   .texteRubrique {
@@ -329,6 +337,14 @@ video {
 
   .categorieH3 {
     font-size: 22px;
+  }
+
+  #imgAccueil {
+    display: none;
+  }
+
+  #imgAccueil2 {
+    display: block;
   }
 }
 
