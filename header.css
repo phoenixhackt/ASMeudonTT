@@ -124,13 +124,45 @@ nav li {
   display: none;
 }
 
-.sidenav a {
+.aPrincipaux {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #4e4e4e;
   display: block;
   transition: 0.3s;
+}
+
+.aSidenav {
+  padding: 0px 0px 0px 40px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #4e4e4e;
+  display: block;
+  transition: 0.3s;
+}
+
+.sousNav {
+  border-left: 1px solid #7c7c7c;
+  margin-left: 40px !important;
+  margin-bottom: 15px !important;
+}
+
+#entraineurLong {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#competLong1 {
+  padding-bottom: 5px;
+}
+
+#competLong2 {
+  padding-top: 5px;
+}
+
+.sousNav li a {
+  padding-left: 15px;
 }
 
 .sidenav a:hover {

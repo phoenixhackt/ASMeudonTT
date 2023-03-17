@@ -1,11 +1,11 @@
 /* ========== CURSOR ========== */
 
 * {
-  cursor:url(../../images/Table_Tennis_Cursor.png) , default!important
+  cursor: url(../../images/Table_Tennis_Cursor.png), default !important;
 }
 
 a {
-    cursor:url(../../images/Table_Tennis_Pointer.png) , pointer!important
+  cursor: url(../../images/Table_Tennis_Pointer.png), pointer !important;
 }
 
 /* ========== IMG ACCUEIL ========== */
@@ -58,7 +58,6 @@ a {
 
 #imgActu {
   width: 45%;
-  min-width: 290px;
 }
 
 #texteActu {
@@ -300,10 +299,9 @@ video {
 
   #texteActu {
     text-align: left;
-    width: 50%;
+    width: 60%;
     margin: auto;
     float: none;
-    min-width: 290px;
   }
 
   .texteRubrique {
@@ -325,6 +323,10 @@ video {
 }
 
 @media screen and (max-width: 600px) {
+  #imgActu {
+    min-width: 290px;
+  }
+
   #inscription {
     width: 80%;
     font-size: 30px;
@@ -365,5 +367,9 @@ video {
 
   #categorie {
     margin-top: 70px;
+  }
+
+  #inscription {
+    font-size: 22px;
   }
 }
