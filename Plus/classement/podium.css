@@ -1,210 +1,95 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
-
-h1 {
-  font-family: "Raleway";
-  font-weight: 400;
-  text-align: center;
-}
-
-h1 {
-  text-align: center;
-}
-
 main {
-  font-size: 16px;
+  margin: 100px 0;
 }
 
-.number-holder {
-  transition: all 500ms ease-in-out;
-}
-
-.scoreboard {
-  border-radius: 5px;
-  display: flex;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 3rem 50px;
-  flex-direction: column;
-  background: #fafafa;
-}
-.scoreboard__item {
-  display: flex;
-  padding: 1rem 0;
-  width: 100%;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  opacity: 0;
-  top: 20px;
-  transition: 500ms ease-in-out;
-}
-.scoreboard__item.is-visible {
-  opacity: 1;
-  top: 0;
-  transition: 500ms ease-in-out;
-}
-.scoreboard__title {
-  width: 300px;
-  font-weight: 600;
-}
-.scoreboard__title small {
-  color: #333;
-}
-.scoreboard__status {
-  font-weight: 300;
-}
-.scoreboard__numbers {
-  font-weight: 600;
-  text-align: right;
-  align-self: flex-end;
-  margin-left: 20px;
-  flex: 1;
-}
-.scoreboard__bar {
-  width: 100%;
-  margin-top: 1rem;
-  background: #ececec;
-  height: 10px;
-  position: relative;
-  border-radius: 5px;
-  transition: all 500ms ease-in-out;
-  display: flex;
-  flex-basis: 100%;
-}
-.scoreboard__bar:before {
-  content: "";
-  width: 100%;
-  flex-basis: 100%;
-  clear: both;
-  display: block;
-}
-.scoreboard__bar-bar {
-  position: absolute;
-  height: 10px;
-  left: 0;
-  top: 0;
-  width: 0;
-  border-radius: 5px;
-  background: linear-gradient(to right, #f0cf65 0%, #ebc137 100%);
-  transition: all 250ms ease-in-out;
-}
-
-.scoreboard__podiums {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 20px auto 100px auto;
-  min-height: 350px;
-}
-.scoreboard__podiums .scoreboard__podium {
-  margin: 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-  flex-wrap: wrap;
-  flex: 1;
-  top: -10px;
-}
-.scoreboard__podiums .scoreboard__podium.is-visible {
-  top: 0;
-  opacity: 1;
-  transition: all 500ms ease-in-out;
-}
-.scoreboard__podiums .scoreboard__podium-rank {
-  font-size: 4rem;
-  font-weight: 700;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  bottom: 0px;
-}
-.scoreboard__podiums .scoreboard__podium-base {
-  background: #ececec;
-  min-width: 150px;
-  border-radius: 5px;
-  transition: all 1000ms ease-in-out;
-  position: relative;
-  height: 200px;
-}
-.scoreboard__podiums .scoreboard__podium-base.is-expanding {
-  opacity: 1;
-}
-.scoreboard__podiums .scoreboard__podium-base--first {
-  background: linear-gradient(to bottom, #bd4f6c 0%, #9e3b55 100%);
-}
-.scoreboard__podiums .scoreboard__podium-base--second {
-  background-color: #f0cf65;
-  background: linear-gradient(to bottom, #f0cf65 0%, #ebc137 100%);
-}
-.scoreboard__podiums .scoreboard__podium-base--third {
-  background-color: #5e9ead;
-  background: linear-gradient(to bottom, #5e9ead 0%, #49828f 100%);
-}
-.scoreboard__podiums .scoreboard__podium-number {
+h1 {
   text-align: center;
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-.scoreboard__podiums .scoreboard__podium-number small {
-  display: block;
-  font-size: 60%;
-  color: #333;
-  line-height: 1.5;
-  text-transform: uppercase;
+  margin: 50px 0;
+  font-family: "Baloo_Bold";
 }
 
-.credits {
-  font-size: 14px;
-  text-align: center;
-  margin: 20px 0;
-}
-
-#scoreboard__items {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style-type: decimal;
-}
-
-.oneup-audio {
+h1 br {
   display: none;
 }
 
-.style-switch {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #000;
-  color: #fff;
-  padding: 5px 10px;
-  border: none;
-  font-size: 15px;
+#fullPodium {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
-main.dark-mode {
-  background: #111;
-  color: #fff;
-}
-main.dark-mode .scoreboard {
-  background: #111;
-  color: #fff;
-}
-main.dark-mode .scoreboard small {
-  color: #eee !important;
-}
-main.dark-mode .scoreboard__bar {
-  background: #333;
+.podiumAndText {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
 }
 
-.bump {
-  animation: bump 500ms ease-in-out;
+.podium {
+  margin: 0 15px;
+  border-radius: 5px;
+  width: 150px;
+  display: flex;
+  align-self: flex-end;
+  position: relative;
 }
 
-@keyframes bump {
-  50% {
-    transform: scale(1.1);
+#podium2 {
+  height: 200px;
+  background: linear-gradient(to bottom, #bd4f6c 0%, #9e3b55 100%);
+}
+
+#podium1 {
+  height: 250px;
+  background: linear-gradient(to bottom, #f0cf65 0%, #ebc137 100%);
+}
+
+#podium3 {
+  height: 150px;
+  background: linear-gradient(to bottom, #5e9ead 0%, #49828f 100%);
+}
+
+h2 {
+  width: auto;
+  margin: auto;
+  font-size: 4rem;
+  font-family: "Baloo_SemiBold";
+}
+
+h3 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 650px) {
+  h1 br {
+    display: block;
   }
-  60% {
-    transform: scale(1);
+
+  .podium {
+    width: 90px;
+    margin: 0 5px;
+  }
+
+  #podium2 {
+    height: 150px;
+    background: linear-gradient(to bottom, #bd4f6c 0%, #9e3b55 100%);
+  }
+
+  #podium1 {
+    height: 200px;
+    background: linear-gradient(to bottom, #f0cf65 0%, #ebc137 100%);
+  }
+
+  #podium3 {
+    height: 100px;
+    background: linear-gradient(to bottom, #5e9ead 0%, #49828f 100%);
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 16px;
   }
 }
