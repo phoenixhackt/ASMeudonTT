@@ -1,0 +1,348 @@
+/* ========== FONTS ========== */
+@font-face {
+  font-family: "Baloo_Regular";
+  src: url(Fonts/static/BalooThambi2-Regular.ttf);
+}
+@font-face {
+  font-family: "Baloo_Medium";
+  src: url(Fonts/static/BalooThambi2-Medium.ttf);
+}
+@font-face {
+  font-family: "Baloo_SemiBold";
+  src: url(Fonts/static/BalooThambi2-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Baloo_Bold";
+  src: url(Fonts/static/BalooThambi2-Bold.ttf);
+}
+@font-face {
+  font-family: "Baloo_ExtraBold";
+  src: url(Fonts/static/BalooThambi2-ExtraBold.ttf);
+}
+
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ========== BODY ========== */
+body {
+  font-family: "Baloo_Regular", Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-color: #e5e5e5;
+  height: 95px;
+}
+.asMeudon {
+  font-size: 44px;
+  font-family: "Baloo_ExtraBold", Arial, Helvetica, sans-serif;
+  padding-top: 13px;
+  margin-left: 45px;
+  float: left;
+}
+
+#asMeudon1 {
+  color: #312783;
+  list-style: none;
+}
+
+#asMeudon2 {
+  color: #e30613;
+  list-style: none;
+}
+
+/* BARRE DE NAVIGTION */
+nav {
+  z-index: 10;
+  position: relative;
+  padding-top: 10px;
+}
+
+nav li {
+  list-style: none;
+}
+
+.navbar {
+  position: absolute;
+  justify-content: space-around;
+  font-family: "Baloo_SemiBold", Arial, Helvetica, sans-serif;
+  text-align: center;
+  right: 45px;
+}
+
+.navbar a {
+  font-size: 24px;
+  padding: 18px 0;
+  display: block;
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.navbar li {
+  height: auto;
+  float: left;
+  width: 220px;
+  font-size: 20px;
+}
+
+#buttonInscription {
+  background-color: #d4000d;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 8px;
+  color: white;
+  margin-left: 10px;
+}
+
+#buttonInscription:hover {
+  background-color: #ed0010;
+}
+
+.navbar li ul {
+  display: none;
+}
+
+.navbar li ul li a:hover {
+  background-color: #d7d7d7;
+}
+
+.navbar li:hover ul {
+  display: block;
+  cursor: pointer;
+}
+
+.navbar li a:hover {
+  transition: 0.2s;
+  background-color: #d7d7d7;
+}
+
+.navbar li ul li {
+  background-color: #e5e5e5;
+  height: auto;
+}
+
+#imgBurger {
+  width: 40px;
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  display: none;
+}
+
+/* Sidenav menu */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -250px;
+  background-color: whitesmoke;
+  padding-top: 60px;
+  transition: right 0.5s ease;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidenav menu links */
+#divSidenav {
+  display: none;
+}
+
+.aPrincipaux {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #4e4e4e;
+  display: block;
+  transition: 0.3s;
+}
+
+.aSidenav {
+  padding: 0px 0px 0px 40px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #4e4e4e;
+  display: block;
+  transition: 0.3s;
+}
+
+.sousNav {
+  border-left: 1px solid #7c7c7c;
+  margin-left: 40px !important;
+  margin-bottom: 15px !important;
+}
+
+#entraineurLong {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#competLong1 {
+  padding-bottom: 5px;
+}
+
+#competLong2 {
+  padding-top: 5px;
+}
+
+.sousNav li a {
+  padding-left: 15px;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+/* Active class */
+.sidenav.active {
+  right: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.burger-icon img {
+  display: none;
+  width: 55px;
+  margin: 22px 20px;
+  float: right;
+}
+
+@media screen and (max-width: 1500px) {
+  nav {
+    display: none;
+  }
+
+  #divSidenav,
+  .burger-icon img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .asMeudon {
+    font-size: 10vw;
+    margin-left: 8vw;
+  }
+
+  .burger-icon img {
+    width: 10vw;
+    margin: 22px 20px;
+  }
+
+  header {
+    height: 22vw;
+  }
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  height: 170px;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Baloo_Bold";
+}
+
+footer div ul {
+  font-size: 20px;
+}
+
+#first,
+#third {
+  margin-top: 10px;
+}
+
+#second {
+  margin-top: 20px;
+}
+
+#third {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer div ul img {
+  width: 30px;
+  height: 30px;
+}
+
+#separationMenu {
+  border: 1px solid #434343;
+  width: 52px;
+}
+
+#separationContact {
+  border: 1px solid #434343;
+  width: 162px;
+}
+
+#separationWeb {
+  border: 1px solid #434343;
+  width: 121px;
+}
+
+#one,
+#two {
+  display: flex;
+}
+
+footer div ul#second li div img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#web {
+  width: 125px;
+}
+
+#brNum {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    display: block;
+    height: auto;
+    padding: 40px 50px;
+  }
+
+  .marginDiv {
+    margin-top: 50px;
+  }
+
+  #brNum {
+    display: block;
+  }
+
+  #one {
+    margin-bottom: 10px;
+  }
+}
