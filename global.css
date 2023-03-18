@@ -149,7 +149,7 @@ nav li {
   top: 0;
   right: -250px;
   background-color: whitesmoke;
-  padding-top: 60px;
+  padding-top: 20px;
   transition: right 0.5s ease;
 }
 
@@ -171,6 +171,7 @@ nav li {
   color: #4e4e4e;
   display: block;
   transition: 0.3s;
+  line-height: 100%;
 }
 
 .aSidenav {
@@ -185,7 +186,7 @@ nav li {
 .sousNav {
   border-left: 1px solid #7c7c7c;
   margin-left: 40px !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 5px !important;
 }
 
 #entraineurLong {
