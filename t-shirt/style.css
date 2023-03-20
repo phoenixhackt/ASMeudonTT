@@ -19,9 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateZ(2px);
 }
-
 .card {
   transform-style: preserve-3d;
   min-height: 80vh;
@@ -29,21 +27,21 @@ body {
   border-radius: 30px;
   padding: 0rem 5rem;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
-  perspective: 1500px; /* ajout de la perspective */
-  transform: translateZ(150px);
 }
 
+<<<<<<< Updated upstream
 .info {
   transform-style: preserve-3d;
 }
 
+=======
+>>>>>>> Stashed changes
 .t-shirt {
   transform-style: preserve-3d;
   min-height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: default;
 }
 .t-shirt img {
   width: 20rem;
@@ -63,6 +61,9 @@ body {
   z-index: 1;
 }
 
+.info {
+  transform-style: preserve-3d;
+}
 
 .info h1 {
   font-size: 3rem;
@@ -74,6 +75,7 @@ body {
   color: #585858;
   font-weight: lighter;
   transition: all 0.75s ease-out;
+  transform-style: preserve-3d;
 }
 .sizes {
   display: flex;
@@ -97,7 +99,6 @@ button.active {
 .purchase {
   margin-top: 5rem;
   transition: all 0.75s ease-out;
-  transform: none;
 }
 .purchase button {
   width: 100%;
