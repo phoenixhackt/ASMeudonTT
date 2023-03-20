@@ -20,7 +20,7 @@ container.addEventListener("mouseenter", (e) => {
   card.style.transition = "none";
   //Popout
   title.style.transform = "translateZ(150px)";
-  tshirt.style.transform = "translateZ(200px) rotateZ(-45deg)";
+  tshirt.style.transform = "translateZ(200px) rotateZ(-360deg)";
   description.style.transform = "translateZ(125px)";
   sizes.style.transform = "translateZ(100px)";
   purchase.style.transform = "translateZ(75px)";
