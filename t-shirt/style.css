@@ -5,6 +5,7 @@
 }
 
 body {
+  transform-style: preserve-3d;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
   display: flex;
@@ -32,8 +33,12 @@ body {
   transform: translateZ(150px);
 }
 
+.info {
+  transform-style: preserve-3d;
+}
 
 .t-shirt {
+  transform-style: preserve-3d;
   min-height: 35vh;
   display: flex;
   align-items: center;

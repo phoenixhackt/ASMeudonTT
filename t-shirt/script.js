@@ -10,8 +10,8 @@ const sizes = document.querySelector(".sizes");
 
 //Moving Animation Event
 container.addEventListener("mousemove", (e) => {
-  let xAxis = (window.innerWidth / 2 - e.pageX) / 20; /* augmentation de la valeur pour l'axe x */
-  let yAxis = (window.innerHeight / 2 - e.pageY) / 20; /* augmentation de la valeur pour l'axe y */
+  let xAxis = (window.innerWidth / 2 - e.pageX) / 30; /* augmentation de la valeur pour l'axe x */
+  let yAxis = (window.innerHeight / 2 - e.pageY) / 30; /* augmentation de la valeur pour l'axe y */
   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
 
