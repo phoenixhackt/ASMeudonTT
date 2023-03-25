@@ -1,0 +1,23 @@
+h1 {
+  font-size: 36px;
+  font-family: "Baloo_Bold";
+  text-align: center;
+  margin: 50px 0;
+  text-decoration: underline;
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  width: 450px;
+  height: 250px;
+  background-color: black;
+  margin: 0 30px;
+}
+
+td {
+  border: 1px solid black;
+}
