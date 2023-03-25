@@ -24,7 +24,7 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
+  box-sizing: border-box;
 }
 
 /* ========== BODY ========== */
@@ -43,6 +43,7 @@ header {
   background-color: #e5e5e5;
   height: 95px;
 }
+
 .asMeudon {
   font-size: 44px;
   font-family: "Baloo_ExtraBold", Arial, Helvetica, sans-serif;
@@ -264,7 +265,6 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 30px 0;
-  height: 170px;
 }
 
 footer h4 {
@@ -280,10 +280,12 @@ footer div ul {
 #first,
 #third {
   margin-top: 10px;
+  list-style: none;
 }
 
 #second {
   margin-top: 20px;
+  list-style: none;
 }
 
 #third {

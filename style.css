@@ -151,6 +151,7 @@ video {
 #inscription a {
   color: white;
   text-decoration: underline;
+  font-family: "Baloo_Meduim";
 }
 
 #inscription:hover {
