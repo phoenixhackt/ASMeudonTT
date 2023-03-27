@@ -1,0 +1,60 @@
+<html lang="fr">
+  <head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <?php
+  if(isset($_POST['submit'])) {
+      $to = "maxencepru@gmail.com";
+      $subject = "Nouvelle inscription";
+      $message = "Nom: ".$_POST['nom']."\n";
+      $message .= "Prénom: ".$_POST['prenom']."\n";
+      $message .= "Sexe: ".$_POST['sexe']."\n";
+      $message .= "Date de naissance: ".$_POST['date_naissance']."\n";
+      $message .= "Nationalité: ".$_POST['nationalite']."\n";
+      $message .= "Adresse: ".$_POST['adresse']."\n";
+      $message .= "Code postal: ".$_POST['code_postal']."\n";
+      $message .= "Ville: ".$_POST['ville']."\n";
+      $message .= "Téléphone portable: ".$_POST['tel_port']."\n";
+      $message .= "E-mail: ".$_POST['email']."\n";
+    
+      // Vérifier les champs obligatoires
+    if($_POST['nom'] == "" || $_POST['prenom'] == "" || $_POST['sexe'] == "" || $_POST['date_naissance'] == "" || $_POST['nationalite'] == "" || $_POST['adresse'] == "" || $_POST['code_postal'] == "" || $_POST['ville'] == "" || $_POST['tel_port'] == "" || $_POST['email'] == "") {
+        echo "Veuillez remplir tous les champs obligatoires.";
+    } else {
+        mail($to, $subject, $message);
+        echo "Votre inscription a bien été enregistrée.";
+    }
+}
+?>
+<form method="post">
+    <label>Nom *</label>
+    <input type="text" name="nom" required>
+    <label>Prénom *</label>
+    <input type="text" name="prenom" required>
+    <label>Sexe *</label>
+    <select name="sexe" required>
+        <option value="">-- Sélectionnez --</option>
+        <option value="M">Masculin</option>
+        <option value="F">Féminin</option>
+    </select>
+    <label>Date de naissance *</label>
+    <input type="date" name="date_naissance" required>
+    <label>Nationalité *</label>
+    <input type="text" name="nationalite" required>
+    <label>Adresse *</label>
+    <input type="text" name="adresse" required>
+    <label>Code postal *</label>
+    <input type="text" name="code_postal" required>
+    <label>Ville *</label>
+    <input type="text" name="ville" required>
+    <label>Téléphone portable *</label>
+    <input type="text" name="tel_port" required>
+    <label>E-mail *</label>
+    <input type="email" name="email" required>
+    <input type="submit" name="submit" value="Envoyer">
+</form>
+  </body>
