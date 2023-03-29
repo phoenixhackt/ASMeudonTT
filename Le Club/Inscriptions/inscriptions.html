@@ -1,95 +1,174 @@
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Inscriptions</title>
-    <link rel="stylesheet" href="inscriptions.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <?php
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
-    
-    require 'vendor/autoload.php'; // Inclure le fichier d'autoloader de PHPMailer
-    
-    if(isset($_POST['submit'])) {
-        // Récupérer les données du formulaire
-        $nom = $_POST['nom'];
-        $prenom = $_POST['prenom'];
-        $sexe = $_POST['sexe'];
-        $date_naissance = $_POST['date_naissance'];
-        $nationalite = $_POST['nationalite'];
-        $adresse = $_POST['adresse'];
-        $code_postal = $_POST['code_postal'];
-        $ville = $_POST['ville'];
-        $tel_port = $_POST['tel_port'];
-        $email = $_POST['email'];
-    
-        // Vérifier les champs obligatoires
-        if($nom == "" || $prenom == "" || $sexe == "" || $date_naissance == "" || $nationalite == "" || $adresse == "" || $code_postal == "" || $ville == "" || $tel_port == "" || $email == "") {
-            echo "Veuillez remplir tous les champs obligatoires.";
-            exit();
-        }
-    
-        // Envoyer l'email
-        $mail = new PHPMailer(true);
-        try {
-            //Configurer le serveur SMTP
-            $mail->isSMTP();                                            
-            $mail->Host       = 'smtp.gmail.com';                     
-            $mail->SMTPAuth   = true;                                   
-            $mail->Username   = 'maxencepru@gmail.com';                     
-            $mail->Password   = 'Jalm$16#2006';                               
-            $mail->SMTPSecure = 'tls';         
-            $mail->Port       = 587;                                    
-    
-            // Destinataire
-            $mail->setFrom('votre_adresse_email@gmail.com', 'Votre nom');
-            $mail->addAddress('maxencepru@gmail.com');    
-    
-            // Contenu de l'email
-            $mail->isHTML(true);                                 
-            $mail->Subject = 'Nouvelle inscription';
-            $mail->Body    = "Nom: $nom \n Prénom: $prenom \n Sexe: $sexe \n Date de naissance: $date_naissance \n Nationalité: $nationalite \n Adresse: $adresse \n Code postal: $code_postal \n Ville: $ville \n Téléphone portable: $tel_port \n E-mail: $email";
-    
-            $mail->send();
-            echo "Votre inscription a bien été enregistrée.";
-        } catch (Exception $e) {
-            echo "Une erreur est survenue lors de l'envoi de l'email : {$mail->ErrorInfo}";
-        }
-    }
-    ?>    
-    <form method="post">
-        <label>Nom *</label>
-        <input type="text" name="nom" required>
-        <label>Prénom *</label>
-        <input type="text" name="prenom" required>
-        <label>Sexe *</label>
-        <select name="sexe" required>
-            <option value="">-- Sélectionnez --</option>
-            <option value="M">Masculin</option>
-            <option value="F">Féminin</option>
-        </select>
-        <label>Date de naissance *</label>
-        <input type="date" name="date_naissance" required>
-        <label>Nationalité *</label>
-        <input type="text" name="nationalite" required>
-        <label>Adresse *</label>
-        <input type="text" name="adresse" required>
-        <label>Code postal *</label>
-        <input type="text" name="code_postal" required>
-        <label>Ville *</label>
-        <input type="text" name="ville" required>
-        <label>Téléphone portable *</label>
-        <input type="text" name="tel_port" required>
-        <label>E-mail *</label>
-        <input type="email" name="email" required>
-        <input type="submit" name="submit" value="Envoyer">
-      </form>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'inscription</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon" />
+    <script defer src="../../header.js"></script>
+</head>
+<body>
+  <header class="header">
+        <div class="asMeudon">
+          <a href=""
+            ><span id="asMeudon1">AS</span><span id="asMeudon2">Meudon TT</span>
+          </a>
+        </div>
+        <nav id="nav1">
+          <ul class="navbar">
+            <li id="liAccueil"><a href="#">Accueil</a></li>
+            <li>
+              <a href="#">Le Club</a>
+              <ul>
+                <li><a href="Le Club/Inscriptions/inscriptions.html">Inscriptions</a></li>
+                <li><a href="Le Club/Lieu/lieu.html">Lieu</a></li>
+                <li>
+                  <a href="Le Club/Entraîneurs et dirigeants/entraineurs.html"
+                    >Entraîneurs et dirigeants</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Compétitions</a>
+              <ul>
+                <li>
+                  <a
+                    href="./Les competitions/Compétitions individuelles/criterium.html"
+                    >Compétitions Individuelles</a
+                  >
+                </li>
+                <li><a href="#">Championnats par équipes</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Plus</a>
+              <ul>
+                <li><a href="#">Stages</a></li>
+                <li><a href="Plus/Horaires/horaires.html">Horaires</a></li>
+                <li><a href="Plus/Contact/contact.html">Contact</a></li>
+              </ul>
+            </li>
+            <li><a id="buttonInscription" href="#">S'inscrire</a></li>
+          </ul>
+        </nav>
+        <div class="divSidenav">
+          <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
+            <ul>
+              <li><a class="aPrincipaux" href="#">Accueil</a></li>
+              <li><a class="aPrincipaux" href="#">Le Club</a></li>
+              <ul class="sousNav">
+                <li>
+                  <a class="aSidenav" href="">Inscriptions</a>
+                </li>
+                <li>
+                  <a id="entraineurLong" class="aSidenav" href=""
+                    >Entraîneurs et dirigents</a
+                  >
+                </li>
+                <li><a class="aSidenav" href="">Lieu</a></li>
+              </ul>
+              <li><a class="aPrincipaux" href="#">Compétions</a></li>
+              <ul class="sousNav">
+                <li>
+                  <a id="competLong1" class="aSidenav" href=""
+                    >Compétions individuelles</a
+                  >
+                </li>
+                <li>
+                  <a id="competLong2" class="aSidenav" href=""
+                    >Championnats par équipes</a
+                  >
+                </li>
+              </ul>
+              <li><a class="aPrincipaux" href="#">Plus</a></li>
+              <ul class="sousNav">
+                <li>
+                  <a class="aSidenav" href="">Stages</a>
+                </li>
+                <li>
+                  <a class="aSidenav" href="">Horaires</a>
+                </li>
+                <li><a class="aSidenav" href="">Contact</a></li>
+              </ul>
+            </ul>
+          </div>
+          <a href="#" id="openBtn">
+            <div class="burger-icon">
+              <img src="../../images/icon-burger.png" />
+            </div>
+          </a>
+        </div>
+  </header>
+
+  <h1 class="title">Inscriptions</h1>
+
+  <div class="text">
+    <p>Vous avez pu découvrir la club de tennis de table de l'AS Meudon, venez vous inscrire.</p>
+    <br>
+    <p>Pour vous inscrire vous avez 2 solutions: 
+        <br>
+        <ul>
+          <li>Télécharger le bulletin d'inscription ci-dessous, le remplir à la main et venir le rendre au gymnase 
+              Vignaud durant les <a id="highlight" href="../../Plus/Horaires/horaires.html">Horaires</a> d'entraînement.</li>
+          <li>Remplir le bulletin d'inscription au format PDF intéractif. Pour ce faire, télécharger le document 
+              PDF ci-dessous, entrez les informations demandés, pensez à enregistrer et <a id="highlight" href="mailto:asmeudontt@gmail.com">enzoyez le par mail.</a></li>
+      </ul>      
+    </p>
+    <div class="pdf">
+      <object class="bulletin-inscription" data="../../inscription/bulletin-inscription-2022_2023.pdf" type="application/pdf" width="50%" height="600px">
+        <p>Votre navigateur ne peut pas afficher le fichier PDF intégré. <a href="../../inscription/bulletin-inscription-2022_2023.pdf">Cliquez ici pour le télécharger.</a></p>
+      </object>
+    </div>    
+  </div>
+
+
+
+  <footer>
+        <div>
+          <h4>Menu</h4>
+          <div id="separationMenu"></div>
+          <ul id="first">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Le Club</a></li>
+            <li><a href="#">Les Compétitions</a></li>
+            <li><a href="#">Plus</a></li>
+          </ul>
+        </div>
+        <div class="marginDiv">
+          <h4>Contactez-nous</h4>
+          <div id="separationContact"></div>
+          <ul id="second">
+            <li>
+              <div id="one">
+                <img src="../../images/phone.png" alt="" />
+                <p>
+                  01 71 22 72 52 &nbsp; <br id="brNum" />
+                  ou &nbsp; 06 61 64 90 08
+                </p>
+              </div>
+            </li>
+            <li>
+              <div id="two">
+                <img src="../../images/email.png" alt="" />
+                <p>asmeudontt@gmail.com</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="marginDiv" id="web">
+          <h4>Suivez-nous</h4>
+          <div id="separationWeb"></div>
+          <ul id="third">
+            <a href="#"><img src="../../images/twitter.png" alt="" /></a>
+            <a href="#"><img src="../../images/instagram.png" alt="" /></a>
+            <a href="#"><img src="../../images/facebook.png" alt="" /></a>
+          </ul>
+        </div>
+  </footer>
+</body>
 </html>
