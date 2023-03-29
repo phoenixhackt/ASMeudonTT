@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
+main {
+  height: 150vh;
+}
+
 .title {
     font-family: Montserrat;
     margin-top: 20px;
@@ -16,9 +20,9 @@
 }
 
 object {
-    height: 1200px;
+    height: 110vh;
     width: 50%;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 .pdf {
@@ -51,4 +55,4 @@ object {
   }
   
   
-  
+  /* ========== MEDIA QUERRY ========== */
