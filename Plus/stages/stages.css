@@ -1,23 +1,48 @@
+main {
+  padding: 30px 80px;
+}
+
 h1 {
   font-size: 36px;
   font-family: "Baloo_Bold";
   text-align: center;
-  margin: 50px 0;
   text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 18px;
 }
 
 #video {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 video {
-  width: 450px;
-  height: 250px;
+  width: 500px;
+  height: 300px;
   background-color: black;
   margin: 0 30px;
 }
 
+table,
 td {
   border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+#stages {
+  margin: 100px 25%;
+}
+
+.stagesSection {
+  margin-bottom: 50px;
 }
