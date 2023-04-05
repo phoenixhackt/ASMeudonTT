@@ -19,7 +19,11 @@ p {
 }
 
 #video {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  
 }
 
 video {
@@ -29,14 +33,18 @@ video {
   margin: 0 30px;
 }
 
-table,
-td {
-  border: 1px solid black;
+.tableau {
+  margin-top: 50px;
+}
+
+table {
   border-collapse: collapse;
+  margin: 20px;
 }
 
 td {
-  padding: 5px 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
 #stages {
