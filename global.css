@@ -232,6 +232,14 @@ nav li {
   float: right;
 }
 
+@media screen and (min-width: 1600px) {
+  body {
+    width: 1600px;
+    margin: auto;
+    box-shadow: 0 0 30px #686868;
+  }
+}
+
 @media screen and (max-width: 1500px) {
   nav {
     display: none;

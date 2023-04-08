@@ -1,58 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-
 main {
-  height: 150vh;
+  width: 60%;
+  margin: 30px auto 100px auto;
+  text-align: justify;
 }
 
 .title {
-    font-family: Montserrat;
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .text {
-    font-family: Montserrat;
-    font-size: larger;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
+  font-size: larger;
+  margin-top: 20px;
+  margin: 0 50px;
 }
 
 object {
-    height: 110vh;
-    width: 50%;
-    margin-top: 100px;
+  box-shadow: 3px 3px 5px;
+  margin-top: 100px;
+  width: 100%;
 }
 
 .pdf {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-
-
-
 #highlight {
-    position: relative;
-    color: #333;
-    text-decoration: underline;
-  }
-  
-  #highlight:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 4px;
-    background-color: #F2BB05;
-    transition: width 0.3s ease-in-out;
-  }
-  
-  #highlight:hover:before {
+  position: relative;
+  color: #1f1f1f;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+#highlight:hover {
+  color: #3b3b3b;
+  transition: 0.2s;
+}
+
+#liFirst {
+  margin-bottom: 10px;
+}
+
+/* ========== MEDIA QUERRY ========== */
+@media screen and (max-width: 1024px) {
+  main {
     width: 100%;
   }
-  
-  
-  /* ========== MEDIA QUERRY ========== */
+}
+
+@media screen and (max-width: 400px) {
+  .text {
+    margin: 30px 25px;
+  }
+
+  object {
+    height: 50vh;
+  }
+}
