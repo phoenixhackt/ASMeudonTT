@@ -1,0 +1,54 @@
+/* définition des styles pour la partie "main" */
+main {
+    margin: 20px;
+  }
+  
+  .titre {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .dev,
+  .photographe {
+    margin-bottom: 50px;
+  }
+  
+  .dev h2,
+  .photographe h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .dev li,
+  .photographe p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* styles pour les listes à puces */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li:before {
+    content: "•";
+    color: #f9bc60;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  /* styles pour les liens */
+  a {
+    color: #6c757d;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #f9bc60;
+  }
+  
