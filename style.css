@@ -1,13 +1,3 @@
-/* ========== CURSOR ========== */
-
-/* * {
-  cursor: url(../../images/Table_Tennis_Cursor.png), default !important;
-}
-
-a {
-  cursor: url(../../images/Table_Tennis_Pointer.png), pointer !important;
-} */
-
 /* ========== IMG ACCUEIL ========== */
 #imgAccueil {
   width: 100%;
@@ -41,7 +31,7 @@ a {
 
 #actualite {
   margin-top: 10px;
-  margin-left: 40px;
+  margin-left: 60px;
   width: 56%;
   float: left;
 }
@@ -69,7 +59,7 @@ a {
 #aVenir {
   float: right;
   margin-top: 10px;
-  margin-right: 50px;
+  margin-right: 60px;
   width: 30%;
 }
 

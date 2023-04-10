@@ -1,23 +1,23 @@
 /* ========== FONTS ========== */
 @font-face {
   font-family: "Baloo_Regular";
-  src: url(Fonts/static/BalooThambi2-Regular.ttf);
+  src: url(Fonts/BalooThambi2-Regular.ttf);
 }
 @font-face {
   font-family: "Baloo_Medium";
-  src: url(Fonts/static/BalooThambi2-Medium.ttf);
+  src: url(Fonts/BalooThambi2-Medium.ttf);
 }
 @font-face {
   font-family: "Baloo_SemiBold";
-  src: url(Fonts/static/BalooThambi2-SemiBold.ttf);
+  src: url(Fonts/BalooThambi2-SemiBold.ttf);
 }
 @font-face {
   font-family: "Baloo_Bold";
-  src: url(Fonts/static/BalooThambi2-Bold.ttf);
+  src: url(Fonts/BalooThambi2-Bold.ttf);
 }
 @font-face {
   font-family: "Baloo_ExtraBold";
-  src: url(Fonts/static/BalooThambi2-ExtraBold.ttf);
+  src: url(Fonts/BalooThambi2-ExtraBold.ttf);
 }
 
 /* ========== RESET ========== */
