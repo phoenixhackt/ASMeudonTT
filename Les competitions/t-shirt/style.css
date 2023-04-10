@@ -1,24 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   transform-style: preserve-3d;
-  font-family: "Poppins", sans-serif;
-  min-height: 100vh;
-  display: flex;
+  /* min-height: 100vh; */
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   perspective: 1000px;
 }
 .container {
   transform-style: preserve-3d;
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
+  margin-left: 275px;
 }
 .card {
   transform-style: preserve-3d;
