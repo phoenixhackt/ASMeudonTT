@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <title>Table Tennis Club - Coaches and Managers</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="entraineurs.css" />
-    <link rel="stylesheet" href="../../global.css" />
-    <link
-      rel="shortcut icon"
-      href="../../images/favicon.png"
-      type="image/x-icon"
-    />
-    <script defer src="../../header.js"></script>
+    <title>Compétitions</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
@@ -104,86 +97,30 @@
         </a>
       </div>
     </header>
-
-    <main>
-      <section class="coaches">
-        <h2>Entraîneurs</h2>
-        <div class="coach">
-          <img class="imgCoach" src="../../images/laurent.webp" alt="Coach 1" />
-          <p>
-            Laurent Pruvost <br />
-            <a href="tel:0615051554">06 15 05 15 54</a>
-          </p>
+    <div class="container">
+      <h1>Compétitions</h1>
+      <div class="section" id="competition1">
+        <img src="" alt="" />
+        <div class="competition-info">
+          <h2>Nom de la compétition 1</h2>
+          <p>Nombre de joueurs participants : 10</p>
         </div>
-        <div class="coach">
-          <img class="imgCoach" src="../../images/jeremy.webp" alt="Coach 2" />
-          <p>Jeremy Rousseau</p>
-        </div>
-      </section>
-
-      <section class="managers">
-        <h2>Membres du bureau</h2>
-        <div class="manager">
-          <img
-            class="imgCoach"
-            src="../../images/jaouad.webp"
-            alt="Manager 1"
-          />
-          <h3>Président du club</h3>
-          <p>
-            Jaouad Ben Larbi
-            <a href="tel:0661649008">06 61 64 90 08</a>
-          </p>
-        </div>
-        <div class="manager">
-          <img class="imgCoach" src="../../images/cyril.webp" alt="Manager 2" />
-          <h3>Trésorier du club</h3>
-          <p>Cyril Jumeau</p>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div>
-        <h4>Menu</h4>
-        <div id="separationMenu"></div>
-        <ul id="first">
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Le Club</a></li>
-          <li><a href="#">Les Compétitions</a></li>
-          <li><a href="#">Plus</a></li>
-        </ul>
       </div>
-      <div class="marginDiv">
-        <h4>Contactez-nous</h4>
-        <div id="separationContact"></div>
-        <ul id="second">
-          <li>
-            <div id="one">
-              <img src="../../images/phone.png" alt="" />
-              <p>
-                01 71 22 72 52 &nbsp; <br id="brNum" />
-                ou &nbsp; 06 61 64 90 08
-              </p>
-            </div>
-          </li>
-          <li>
-            <div id="two">
-              <img src="../../images/email.png" alt="" />
-              <p>asmeudontt@gmail.com</p>
-            </div>
-          </li>
-        </ul>
+      <div class="section" id="competition2">
+        <img src="" alt="" />
+        <div class="competition-info">
+          <h2>Nom de la compétition 2</h2>
+          <p>Nombre de joueurs participants : 20</p>
+        </div>
       </div>
-      <div class="marginDiv" id="web">
-        <h4>Suivez-nous</h4>
-        <div id="separationWeb"></div>
-        <ul id="third">
-          <a href="#"><img src="../../images/twitter.png" alt="" /></a>
-          <a href="#"><img src="../../images/instagram.png" alt="" /></a>
-          <a href="#"><img src="../../images/facebook.png" alt="" /></a>
-        </ul>
+      <div class="section" id="competition3">
+        <img src="" alt="" />
+        <div class="competition-info">
+          <h2>Nom de la compétition 3</h2>
+          <p>Nombre de joueurs participants : 15</p>
+        </div>
       </div>
-    </footer>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
