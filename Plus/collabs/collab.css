@@ -1,6 +1,6 @@
 main {
   width: 45%;
-  margin: 30px auto;
+  margin: 40px auto 100px auto;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h2 {
 }
 
 .division {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .content {
