@@ -265,6 +265,7 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 30px 0;
+  height: 220px;
 }
 
 footer h4 {
@@ -334,7 +335,7 @@ footer div ul#second li div img {
 @media screen and (max-width: 900px) {
   footer {
     display: block;
-    height: auto;
+    height: 600px;
     padding: 40px 50px;
   }
 
