@@ -361,7 +361,9 @@ video {
   }
 
   .categorieH3 {
-    font-size: 22px;
+    text-align: justify;
+    font-size: 19px;
+    font-family: Baloo_SemiBold, Arial, Helvetica, sans-serif;
   }
 
   #imgAccueil {
