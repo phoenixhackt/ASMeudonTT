@@ -270,7 +270,7 @@ video {
   #categorie {
     display: block;
     float: none;
-    margin-top: 400px;
+    margin-top: 200px;
   }
 
   .categorieDiv {
@@ -308,7 +308,6 @@ video {
     text-align: center;
     width: auto;
     margin-bottom: 5px;
-    margin: 5px 20px;
     float: none;
   }
 
