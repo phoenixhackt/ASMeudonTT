@@ -29,6 +29,7 @@
 .titreCategorie {
   font-size: 32px;
   font-family: "Baloo_SemiBold", Arial, Helvetica, sans-serif;
+  text-align: left;
 }
 
 .texteRubrique {
