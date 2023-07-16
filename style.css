@@ -38,10 +38,6 @@
   text-align: justify;
 }
 
-.mobileTexteRubrique {
-  display: none;
-}
-
 #actualite {
   margin-top: 10px;
   margin-left: 60px;
@@ -311,11 +307,6 @@ video {
     float: none;
   }
 
-  .mobileTexteRubrique {
-    display: block;
-    font-size: 20px;
-  }
-
   .categorieDiv {
     width: 85%;
     margin: 30px auto;
@@ -342,11 +333,6 @@ video {
 
   .texteRubrique {
     font-size: 18px;
-  }
-
-  .mobileTexteRubrique {
-    display: block;
-    font-size: 16px;
   }
 
   .titreRubrique {
