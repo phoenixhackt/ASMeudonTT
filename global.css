@@ -127,6 +127,7 @@ nav li {
 .navbar li a:hover {
   transition: 0.2s;
   background-color: #d7d7d7;
+  text-decoration: underline;
 }
 
 .navbar li ul li {

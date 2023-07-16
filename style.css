@@ -11,6 +11,14 @@
 }
 
 /* ========== NOS ACTUALITÉ ========== */
+.link {
+  color: rgb(230, 0, 0);
+  font-family: "Baloo_Medium", Arial, Helvetica, sans-serif;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
 
 .titreRubrique {
   font-size: 36px;
@@ -24,9 +32,13 @@
 }
 
 .texteRubrique {
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Baloo_Regular", Arial, Helvetica, sans-serif;
   text-align: justify;
+}
+
+.mobileTexteRubrique {
+  display: none;
 }
 
 #actualite {
@@ -134,7 +146,7 @@ video {
   border: none;
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.74);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 #inscription a {
@@ -144,8 +156,9 @@ video {
 }
 
 #inscription:hover {
-  transition: 0.3s;
+  transition: 0.2s;
   background-color: #ed0010;
+  text-decoration: underline;
 }
 
 /* ========== MEDIA QUERRY ========== */
@@ -155,7 +168,7 @@ video {
   }
 
   #globalRubrique {
-    width: 90%;
+    width: 85%;
     margin: auto;
   }
 
@@ -209,6 +222,12 @@ video {
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .texteRubrique {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   #evenement1,
   #evenement2,
@@ -216,20 +235,20 @@ video {
     margin: 18px 0;
     width: 30%;
   }
+
+  #aVenir {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (max-width: 1015px) {
   #aVenir {
     margin: auto;
-    width: 95%;
+    margin-top: 30px;
   }
 
   #event {
     display: block;
-  }
-
-  #texteActu {
-    width: 73%;
   }
 
   #evenement1,
@@ -281,21 +300,20 @@ video {
   }
 
   #imgActu {
-    display: block;
-    float: none;
-    width: 60%;
-    margin: auto;
+    display: none;
   }
 
   #texteActu {
-    text-align: left;
-    width: 60%;
-    margin: auto;
+    text-align: center;
+    width: auto;
+    margin-bottom: 5px;
+    margin: 5px 20px;
     float: none;
   }
 
-  .texteRubrique {
-    display: none;
+  .mobileTexteRubrique {
+    display: block;
+    font-size: 20px;
   }
 
   .categorieDiv {
@@ -326,6 +344,11 @@ video {
     font-size: 18px;
   }
 
+  .mobileTexteRubrique {
+    display: block;
+    font-size: 16px;
+  }
+
   .titreRubrique {
     font-size: 28px;
     font-family: "Baloo_ExtraBold", Arial, Helvetica, sans-serif;
@@ -348,6 +371,10 @@ video {
   #imgAccueil2 {
     display: block;
   }
+
+  #inscription {
+    font-size: 21px;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -357,9 +384,5 @@ video {
 
   #categorie {
     margin-top: 70px;
-  }
-
-  #inscription {
-    font-size: 22px;
   }
 }
