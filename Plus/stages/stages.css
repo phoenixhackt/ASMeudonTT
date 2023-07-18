@@ -1,5 +1,6 @@
 main {
   padding: 30px 80px;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -7,7 +8,8 @@ h1 {
   font-family: "Baloo_Bold";
   text-align: center;
   text-decoration: underline;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  margin-top: 30px;
 }
 
 h2 {
@@ -22,18 +24,18 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 50px;
 }
 
 video {
   width: 500px;
   height: 300px;
   background-color: black;
-  margin: 0 30px;
+  margin-bottom: 50px;
 }
 
 .tableau {
   margin-top: 50px;
+  margin-bottom: 70px;
 }
 
 table {

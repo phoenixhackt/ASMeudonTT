@@ -10,46 +10,50 @@
     <script defer src="../../header.js"></script>
   </head>
   <body>
-    <header class="header">
-      <div class="asMeudon">
-        <a href=""
+    <header>
+      <div id="asMeudon">
+        <a href="#"
           ><span id="asMeudon1">AS</span><span id="asMeudon2">Meudon TT</span>
         </a>
       </div>
       <nav id="nav1">
         <ul class="navbar">
-          <li id="liAccueil"><a href="#">Accueil</a></li>
+          <li id="liAccueil"><a href="../../index.html">Accueil</a></li>
           <li>
             <a href="#">Le Club</a>
             <ul>
               <li>
-                <a href="Le Club/Inscriptions/inscriptions.html"
+                <a href="../../Le Club/Inscriptions/inscriptions.html"
                   >Inscriptions</a
                 >
               </li>
-              <li><a href="Le Club/Lieu/lieu.html">Lieu</a></li>
+              <li><a href="../../Le Club/Lieu/">Lieu</a></li>
               <li>
-                <a href="Le Club/Entraîneurs et dirigeants/entraineurs.html"
+                <a
+                  href="../../Le Club/Entraîneurs et dirigeants/entraineurs.html"
                   >Entraîneurs et dirigeants</a
                 >
               </li>
             </ul>
           </li>
           <li>
-            <a href="Les competitions/criterium.html">Les Compétitions</a>
+            <a href="../../Les competitions/criterium.html">Les Compétitions</a>
           </li>
           <li>
             <a href="#">Plus</a>
             <ul>
-              <li><a href="Plus/stages/stages.html">Stages</a></li>
-              <li><a href="Plus/Horaires/horaires.html">Horaires</a></li>
-              <li><a href="Plus/Contact/contact.html">Contact</a></li>
+              <li><a href="../../Plus/stages/stages.html">Stages</a></li>
+              <li><a href="../../Plus/Horaires/horaires.html">Horaires</a></li>
+              <li><a href="#">Contact</a></li>
+              <li>
+                <a href="../../Plus/collabs/collab.html">Les Collaborateurs</a>
+              </li>
             </ul>
           </li>
           <li>
             <a
               id="buttonInscription"
-              href="Le Club/Inscriptions/inscriptions.html"
+              href="../../Le Club/Inscriptions/inscriptions.html"
               >S'inscrire</a
             >
           </li>
@@ -65,44 +69,63 @@
               <li>
                 <a
                   class="aSidenav"
-                  href="Le Club/Inscriptions/inscriptions.html"
+                  href="../../Le Club/Inscriptions/inscriptions.html"
                   >Inscriptions</a
                 >
+              </li>
+              <li>
+                <a class="aSidenav" href="../../Le Club/Lieu/lieu.html">Lieu</a>
               </li>
               <li>
                 <a
                   id="entraineurLong"
                   class="aSidenav"
-                  href="Le Club/Entraîneurs et dirigeants/entraineurs.html"
+                  href="../../Le Club/Entraîneurs et dirigeants/entraineurs.html"
                   >Entraîneurs et dirigents</a
                 >
               </li>
-              <li>
-                <a class="aSidenav" href="Le Club/Lieu/lieu.html">Lieu</a>
-              </li>
             </ul>
+            <li>
+              <a
+                class="aPrincipaux"
+                href="../../Les competitions/criterium.html"
+                >Les Compétitions</a
+              >
+            </li>
             <li><a class="aPrincipaux" href="#">Plus</a></li>
             <ul class="sousNav">
               <li>
-                <a class="aSidenav" href="">Stages</a>
+                <a class="aSidenav" href="../../Plus/stages/stages.html"
+                  >Stages</a
+                >
               </li>
               <li>
-                <a class="aSidenav" href="">Horaires</a>
+                <a class="aSidenav" href="../../Plus/Horaires/horaires.html"
+                  >Horaires</a
+                >
               </li>
-              <li><a class="aSidenav" href="">Contact</a></li>
+              <li>
+                <a class="aSidenav" href="#">Contact</a>
+              </li>
+              <li>
+                <a class="aSidenav" href="../../Plus/collabs/collab.html"
+                  >Les Collaborateurs</a
+                >
+              </li>
             </ul>
           </ul>
         </div>
         <a href="#" id="openBtn">
           <div class="burger-icon">
-            <img src="images/icon-burger.png" />
+            <img src="../../images/icon-burger.png" />
           </div>
         </a>
       </div>
     </header>
+
     <div class="ecran">
       <div class="carte" data-tilt>
-        <img class="logo" src="media/favicon.png" />
+        <img class="logo" src="../../images/favicon.png" />
         <h2>AS Meudon TT</h2>
         <p>
           Club de tennis de table à Meudon<br /><br />Entraînement loisir
@@ -111,31 +134,32 @@
           Entraînement compétition.
         </p>
         <div class="reseau">
+          <a href="#"><img src="../../images/map.png" /></a>
           <a href="https://www.instagram.com/asmeudontennisdetable/?hl=fr"
-            ><img src="media/instagram.png"
+            ><img src="../../images/instagram.png"
           /></a>
           <a
             href="https://m.facebook.com/people/As-Meudon-Tennis-de-Table/100057156052613/"
-            ><img src="media/facebook.png"
-          /></a>
-          <a href="#"><img src="media/twitter.png" /></a>
-          <a
-            href="https://www.fftt.com/site/structures/by-number?number_id=08920067"
-            ><img id="fftt_icon" src="media/fftt_icon-modified.png"
+            ><img src="../../images/facebook.png"
           /></a>
         </div>
         <a href="mailto:asmeudontt@gmail.com" class="bouton">Contactez-nous</a>
       </div>
     </div>
+
     <footer>
       <div>
         <h4>Menu</h4>
         <div id="separationMenu"></div>
         <ul id="first">
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Le Club</a></li>
-          <li><a href="#">Les Compétitions</a></li>
-          <li><a href="#">Plus</a></li>
+          <li>
+            <a href="#asMeudon">Accueil</a>
+          </li>
+          <li><a href="#asMeudon">Le Club</a></li>
+          <li>
+            <a href="#asMeudon">Les Compétitions</a>
+          </li>
+          <li><a href="#asMeudon">Plus</a></li>
         </ul>
       </div>
       <div class="marginDiv">
@@ -146,15 +170,16 @@
             <div id="one">
               <img src="../../images/phone.png" alt="" />
               <p>
-                01 71 22 72 52 &nbsp; <br id="brNum" />
-                ou &nbsp; 06 61 64 90 08
+                <a href="tel:+33171227252">01 71 22 72 52</a> &nbsp;
+                <br id="brNum" />
+                ou &nbsp; <a href="tel:+33661649008">06 61 64 90 08</a>
               </p>
             </div>
           </li>
           <li>
             <div id="two">
               <img src="../../images/email.png" alt="" />
-              <p>asmeudontt@gmail.com</p>
+              <a href="mailto:asmeudontt@gmail.com">asmeudontt@gmail.com</a>
             </div>
           </li>
         </ul>
@@ -163,9 +188,19 @@
         <h4>Suivez-nous</h4>
         <div id="separationWeb"></div>
         <ul id="third">
-          <a href="#"><img src="../../images/twitter.png" alt="" /></a>
-          <a href="#"><img src="../../images/instagram.png" alt="" /></a>
-          <a href="#"><img src="../../images/facebook.png" alt="" /></a>
+          <a href="https://goo.gl/maps/eCt315XPcR1168rm9" target="_blank"
+            ><img src="../../images/map.png" alt=""
+          /></a>
+          <a
+            href="https://www.instagram.com/asmeudontennisdetable/"
+            target="_blank"
+            ><img src="../../images/instagram.png" alt=""
+          /></a>
+          <a
+            href="https://www.facebook.com/people/As-Meudon-Tennis-de-Table/100057156052613/"
+            target="_blank"
+            ><img src="../../images/facebook.png" alt=""
+          /></a>
         </ul>
       </div>
     </footer>
