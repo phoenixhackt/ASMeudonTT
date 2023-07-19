@@ -1,29 +1,5 @@
 /* ========== FONTS ========== */
-@font-face {
-  font-family: "Baloo_Regular";
-  font-weight: 400;
-  src: url(Fonts/BalooThambi2-Regular.ttf);
-}
-@font-face {
-  font-family: "Baloo_Medium";
-  font-weight: 500;
-  src: url(Fonts/BalooThambi2-Medium.ttf);
-}
-@font-face {
-  font-family: "Baloo_SemiBold";
-  font-weight: 600;
-  src: url(Fonts/BalooThambi2-SemiBold.ttf);
-}
-@font-face {
-  font-family: "Baloo_Bold";
-  font-weight: 700;
-  src: url(Fonts/BalooThambi2-Bold.ttf);
-}
-@font-face {
-  font-family: "Baloo_ExtraBold";
-  font-weight: 800;
-  src: url(Fonts/BalooThambi2-ExtraBold.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap"); /* Baloo Thambi 2 */
 
 /* ========== RESET ========== */
 * {
@@ -39,7 +15,8 @@ html {
 
 /* ========== BODY ========== */
 body {
-  font-family: "Baloo_Regular", Arial, Helvetica, sans-serif;
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -56,7 +33,8 @@ header {
 
 #asMeudon {
   font-size: 44px;
-  font-family: "Baloo_ExtraBold", Arial, Helvetica, sans-serif;
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+  font-weight: 800;
   padding-top: 13px;
   margin-left: 45px;
   float: left;
@@ -87,7 +65,8 @@ nav li {
 .navbar {
   position: absolute;
   justify-content: space-around;
-  font-family: "Baloo_SemiBold", Arial, Helvetica, sans-serif;
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+  font-weight: 600;
   text-align: center;
   right: 45px;
 }
@@ -285,7 +264,8 @@ footer {
 footer h4 {
   text-transform: uppercase;
   font-size: 20px;
-  font-family: "Baloo_Bold";
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 footer div ul {

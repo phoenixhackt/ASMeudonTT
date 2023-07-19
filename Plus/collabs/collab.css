@@ -6,7 +6,8 @@ main {
 h1 {
   text-align: center;
   font-size: 2.5rem;
-  font-family: "Baloo_Bold";
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 #container {

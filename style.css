@@ -13,7 +13,8 @@
 /* ========== NOS ACTUALITÉ ========== */
 .link {
   color: rgb(230, 0, 0);
-  font-family: "Baloo_Medium", Arial, Helvetica, sans-serif;
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 .link:hover {
@@ -22,19 +23,20 @@
 
 .titreRubrique {
   font-size: 36px;
-  font-family: "Baloo_ExtraBold", Arial, Helvetica, sans-serif;
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
 .titreCategorie {
   font-size: 32px;
-  font-family: "Baloo_SemiBold", Arial, Helvetica, sans-serif;
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+  font-weight: 600;
   text-align: left;
 }
 
 .texteRubrique {
   font-size: 22px;
-  font-family: "Baloo_Regular", Arial, Helvetica, sans-serif;
   text-align: justify;
 }
 
@@ -99,7 +101,8 @@
 #titreVideo {
   margin-top: 500px;
   font-size: 40px;
-  font-family: "Baloo_Bold", Arial, Helvetica, sans-serif;
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 video {
@@ -119,7 +122,8 @@ video {
 }
 
 .categorieH3 {
-  font-family: "Baloo_Medium", Arial, Helvetica, sans-serif;
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+  font-weight: 500;
   font-size: 20px;
   text-align: left;
 }
@@ -135,7 +139,8 @@ video {
   width: 30%;
   padding: 10px;
   font-size: 36px;
-  font-family: "Baloo_SemiBold", Arial, Helvetica, sans-serif;
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+  font-weight: 600;
   color: white;
   text-align: center;
   display: block;
@@ -337,19 +342,22 @@ video {
 
   .titreRubrique {
     font-size: 28px;
-    font-family: "Baloo_ExtraBold", Arial, Helvetica, sans-serif;
+    font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+    font-weight: 800;
     text-transform: uppercase;
   }
 
   .titreCategorie {
     font-size: 22px;
-    font-family: "Baloo_SemiBold", Arial, Helvetica, sans-serif;
+    font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+    font-weight: 600;
   }
 
   .categorieH3 {
     text-align: justify;
     font-size: 19px;
-    font-family: Baloo_SemiBold, Arial, Helvetica, sans-serif;
+    font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+    font-weight: 600;
   }
 
   #imgAccueil {
