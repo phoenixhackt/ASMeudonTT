@@ -1,22 +1,27 @@
 /* ========== FONTS ========== */
 @font-face {
   font-family: "Baloo_Regular";
+  font-weight: 400;
   src: url(Fonts/BalooThambi2-Regular.ttf);
 }
 @font-face {
   font-family: "Baloo_Medium";
+  font-weight: 500;
   src: url(Fonts/BalooThambi2-Medium.ttf);
 }
 @font-face {
   font-family: "Baloo_SemiBold";
+  font-weight: 600;
   src: url(Fonts/BalooThambi2-SemiBold.ttf);
 }
 @font-face {
   font-family: "Baloo_Bold";
+  font-weight: 700;
   src: url(Fonts/BalooThambi2-Bold.ttf);
 }
 @font-face {
   font-family: "Baloo_ExtraBold";
+  font-weight: 800;
   src: url(Fonts/BalooThambi2-ExtraBold.ttf);
 }
 
