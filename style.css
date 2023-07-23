@@ -11,6 +11,9 @@
 }
 
 /* ========== NOS ACTUALITÉ ========== */
+#content {
+  padding: 45px;
+}
 .link {
   color: rgb(230, 0, 0);
   font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
@@ -29,22 +32,23 @@
 }
 
 .titreCategorie {
-  font-size: 32px;
+  font-size: 30px;
   font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
   font-weight: 600;
-  text-align: left;
 }
 
 .texteRubrique {
-  font-size: 22px;
+  font-size: 20px;
   text-align: justify;
+  line-height: 30px;
+}
+
+#globalRubrique {
+  display: flex;
 }
 
 #actualite {
-  margin-top: 10px;
-  margin-left: 60px;
-  width: 56%;
-  float: left;
+  margin-right: 50px;
 }
 
 #separationActu {
@@ -54,23 +58,25 @@
 
 #actuContent {
   margin-top: 18px;
-}
-
-#imgActu {
-  width: 45%;
+  display: flex;
 }
 
 #texteActu {
-  width: 53%;
-  float: right;
+  width: 70%;
+}
+
+#imgActu {
+  width: 350px;
+  background-image: url("images/actu.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 20px;
 }
 
 /* ========== À VENIR ========== */
 #aVenir {
-  float: right;
-  margin-top: 10px;
-  margin-right: 60px;
-  width: 30%;
+  width: 90%;
 }
 
 #separationEvent {
@@ -94,8 +100,8 @@
 
 /* ========== VIDEO STAGE ========== */
 #stage {
-  margin-left: 4%;
-  margin-top: 500px;
+  padding: 45px 0;
+  margin-top: 50px;
 }
 
 #titreVideo {
@@ -113,7 +119,7 @@ video {
 #categorie {
   margin-top: 150px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -169,44 +175,6 @@ video {
     width: 50%;
   }
 
-  #globalRubrique {
-    width: 85%;
-    margin: auto;
-  }
-
-  #texteActu {
-    width: 73%;
-  }
-
-  #actualite {
-    float: none;
-    width: 100%;
-    margin: auto;
-  }
-
-  #imgActu {
-    width: 25%;
-  }
-
-  #aVenir {
-    float: none;
-    width: 100%;
-  }
-
-  #event {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: auto;
-  }
-
-  #evenement1,
-  #evenement2,
-  #evenement3 {
-    margin: 18px 0;
-    width: 27%;
-  }
-
   #titreVideo {
     margin-top: 40px;
   }
@@ -218,50 +186,60 @@ video {
   video {
     width: 70%;
   }
-
-  #stage {
-    margin-top: 100px;
-  }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1310px) {
+  .titreRubrique {
+    font-size: 32px;
+    font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .titreCategorie {
+    font-size: 26px;
+    font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+
   .texteRubrique {
-    font-size: 20px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+  }
+
+  #imgActu {
+    width: 350px;
+    background-image: url("images/actu.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+  }
+
+  #stage {
+    padding: 0px;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  #evenement1,
-  #evenement2,
-  #evenement3 {
-    margin: 18px 0;
-    width: 30%;
+  #globalRubrique {
+    display: block;
+  }
+
+  #actualite {
+    margin: 0;
   }
 
   #aVenir {
     margin-top: 30px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 1015px) {
-  #aVenir {
-    margin: auto;
-    margin-top: 30px;
-  }
-
-  #event {
-    display: block;
-  }
-
-  #evenement1,
-  #evenement2,
-  #evenement3 {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  #stage {
-    margin-top: 100px;
+  #imgActu {
+    width: 250px;
   }
 
   video {
@@ -282,34 +260,11 @@ video {
   .categorieH3 {
     font-size: 25px;
   }
-
-  #texteActu {
-    width: 60%;
-  }
-
-  #imgActu {
-    width: 35%;
-  }
 }
 
 @media screen and (max-width: 900px) {
   #inscription {
     width: 70%;
-  }
-
-  #actuContent {
-    display: block;
-  }
-
-  #imgActu {
-    display: none;
-  }
-
-  #texteActu {
-    text-align: center;
-    width: auto;
-    margin-bottom: 5px;
-    float: none;
   }
 
   .categorieDiv {
@@ -320,15 +275,21 @@ video {
   .titreCategorie {
     font-size: 32px;
   }
+}
 
-  #aVenir {
-    margin-top: 75px;
+@media screen and (max-width: 750px) {
+  #imgActu {
+    display: none;
+  }
+
+  #texteActu {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  #imgActu {
-    min-width: 290px;
+  #content {
+    padding: 45px 30px;
   }
 
   #inscription {
@@ -337,11 +298,11 @@ video {
   }
 
   .texteRubrique {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .titreRubrique {
-    font-size: 28px;
+    font-size: 26px;
     font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
     font-weight: 800;
     text-transform: uppercase;
@@ -370,6 +331,10 @@ video {
 
   #inscription {
     font-size: 21px;
+  }
+
+  #categorie {
+    margin-top: 100px;
   }
 }
 
