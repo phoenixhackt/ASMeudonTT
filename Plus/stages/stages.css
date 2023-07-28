@@ -1,54 +1,75 @@
-main {
-  padding: 30px 80px;
-  margin-bottom: 20px;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
 
 h1 {
-  font-size: 36px;
-  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
-  font-weight: 700;
   text-align: center;
-  text-decoration: underline;
-  margin-bottom: 15px;
-  margin-top: 30px;
+  margin: 20px 0;
 }
 
-h2 {
-  font-size: 26px;
-  margin-bottom: 5px;
-}
-
-#video {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-video {
-  width: 500px;
-  background-color: black;
-  margin-bottom: 10px;
-}
-
-.tableau {
-  margin-top: 50px;
-  margin-bottom: 70px;
+.table-container {
+  overflow-x: auto;
+  margin: 20px;
 }
 
 table {
+  border: 1px solid #ddd;
+  width: 100%;
   border-collapse: collapse;
-  margin: auto;
+  border-spacing: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0 80px 0;
 }
 
+th,
 td {
-  border: 2px solid #ccc;
-  padding: 20px 30px;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
 }
 
-#stages {
-  margin: 100px 25%;
+td[rowspan] {
+  border-right: 1px solid #ddd;
 }
 
-#videoIntro {
-  box-shadow: 1px 1px 6px;
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(2n) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Media queries for responsive design */
+
+/* Small screens (up to 600px) */
+@media screen and (max-width: 600px) {
+  th,
+  td {
+    padding: 8px;
+  }
+}
+
+/* Medium screens (from 601px to 900px) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  th,
+  td {
+    padding: 10px;
+  }
+}
+
+/* Large screens (above 900px) */
+@media screen and (min-width: 901px) {
+  th,
+  td {
+    padding: 12px;
+  }
 }

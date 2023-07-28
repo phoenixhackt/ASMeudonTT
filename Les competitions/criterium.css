@@ -11,9 +11,11 @@ section {
   margin-bottom: 30px;
 }
 
-section p {
-  text-align: center;
-  font-size: larger;
+#criteriumInfo {
+  max-width: 1000px;
+  margin: auto;
+  text-align: justify;
+  font-size: 20px;
 }
 
 section h2 {
@@ -23,6 +25,11 @@ section h2 {
 
 main h3 {
   font-size: 30px;
+}
+
+main div p {
+  font-size: 20px;
+  text-align: justify;
 }
 
 section img {
@@ -125,5 +132,59 @@ iframe:hover {
     position: unset;
     margin: auto;
     margin-top: 400px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #criteriumInfo {
+    margin: 0 20px;
+  }
+
+  section h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section img {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+  }
+
+  iframe {
+    width: 90%;
+    height: 400px;
+  }
+
+  section h2 {
+    font-size: 30px;
+  }
+
+  #criteriumInfo {
+    font-size: 16px;
+  }
+
+  main div p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  section h2 {
+    font-size: 24px;
+  }
+
+  #criteriumInfo {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  main h3 {
+    font-size: 24px;
+  }
+
+  main div p {
+    font-size: 14px;
   }
 }
