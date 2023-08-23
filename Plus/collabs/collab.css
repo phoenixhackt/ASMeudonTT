@@ -1,3 +1,7 @@
+body {
+  height: 100vh;
+}
+
 main {
   width: 45%;
   margin: 40px auto 100px auto;

@@ -1,3 +1,4 @@
+/* Base Styles */
 main {
   width: 60%;
   margin: 30px auto 100px auto;
@@ -15,7 +16,7 @@ main {
   margin: 0 50px;
 }
 
-object {
+.object {
   box-shadow: 3px 3px 5px;
   margin-top: 100px;
   width: 100%;
@@ -30,19 +31,18 @@ object {
   position: relative;
   color: #1f1f1f;
   text-decoration: underline;
-  transition: 0.2s;
+  transition: color 0.2s;
 }
 
 #highlight:hover {
   color: #3b3b3b;
-  transition: 0.2s;
 }
 
 #liFirst {
   margin-bottom: 10px;
 }
 
-/* ========== MEDIA QUERRY ========== */
+/* Media Queries */
 @media screen and (max-width: 1024px) {
   main {
     width: 100%;
@@ -54,7 +54,7 @@ object {
     margin: 30px 25px;
   }
 
-  object {
+  .object {
     height: 50vh;
   }
 }

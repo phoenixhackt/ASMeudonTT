@@ -1,5 +1,4 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
 }
 
@@ -25,6 +24,7 @@ section h2 {
 
 main h3 {
   font-size: 30px;
+  margin-top: 30px;
 }
 
 main div p {
@@ -42,12 +42,7 @@ a:hover {
   color: #ff0000;
 }
 
-img:hover {
-  opacity: 0.8;
-  transition: 0.3s;
-}
-
-iframe {
+/* iframe {
   padding: 20px;
   box-shadow: 1px 1px 15px rgb(143, 143, 143);
   border-radius: 15px;
@@ -60,7 +55,7 @@ iframe {
 
 iframe:hover {
   scale: 1.02;
-}
+} */
 
 .email-button {
   display: flex;
@@ -100,13 +95,9 @@ iframe:hover {
 
 .calendar-container {
   position: absolute;
-  /* positionnement absolu pour la boîte */
   top: 70%;
-  /* position verticale au milieu de la page */
   right: 20px;
-  /* position horizontale à droite de la page */
   transform: translateY(-50%);
-  /* déplacement de la boîte de moitié de sa hauteur vers le haut */
   width: 400px;
   height: 500px;
   padding: 20px;

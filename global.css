@@ -1,5 +1,9 @@
 /* ========== FONTS ========== */
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap"); /* Baloo Thambi 2 */
+@font-face {
+  font-family: "Baloo Thambi 2";
+  src: url("BalooThambi2.woff");
+  font-display: swap
+}
 
 /* ========== RESET ========== */
 * {
@@ -33,7 +37,6 @@ header {
 
 #asMeudon {
   font-size: 44px;
-  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
   font-weight: 800;
   padding-top: 13px;
   margin-left: 45px;
@@ -65,7 +68,6 @@ nav li {
 .navbar {
   position: absolute;
   justify-content: space-around;
-  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-align: center;
   right: 45px;
@@ -218,6 +220,7 @@ nav li {
 .burger-icon img {
   display: none;
   width: 55px;
+  height: 45px;
   margin: 22px 20px;
   float: right;
 }
@@ -264,7 +267,6 @@ footer {
 footer h4 {
   text-transform: uppercase;
   font-size: 20px;
-  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
 

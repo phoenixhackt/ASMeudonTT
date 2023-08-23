@@ -1,9 +1,9 @@
 /* html {
-  height: 100vh;
+  height: 200vh;
 } */
 
 .ecran {
-  margin: 80px auto;
+  margin: 100px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,6 @@
 
 .carte h2 {
   font-size: 50px;
-  font-weight: 600px;
   margin-top: 20px;
 }
 

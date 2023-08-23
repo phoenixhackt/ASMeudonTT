@@ -1,6 +1,7 @@
+/* Base Styles */
 main {
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 h1 {
@@ -8,15 +9,12 @@ h1 {
   font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 50px;
+  text-align: center;
 }
 
 h2 {
   margin: 10px 0;
   font-size: 28px;
-}
-
-h1,
-h2 {
   text-align: center;
 }
 
@@ -42,24 +40,22 @@ p {
 }
 
 #map_div {
-  margin-bottom: 100px;
   margin-bottom: 125px;
 }
 
 #map {
-  margin-top: 20px;
+  margin: 20px auto;
   height: 400px;
-  width: 500px;
-  margin: auto;
+  max-width: 100%;
 }
 
+/* Media Queries */
 @media screen and (max-width: 1000px) {
   main {
     width: 90%;
-    margin: auto;
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
