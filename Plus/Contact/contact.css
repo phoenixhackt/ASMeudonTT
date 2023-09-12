@@ -3,11 +3,10 @@
 } */
 
 .ecran {
-  margin: 100px auto;
+  margin: 50px auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - (95px + 220px));
 }
 
 .carte {
@@ -57,4 +56,14 @@
   padding: 10px 30px;
   border-radius: 30px;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 420px) {
+    .carte h2 {
+        font-size: 37px;
+    }
+    
+    .carte p {
+        font-size: 16px;
+    }
 }

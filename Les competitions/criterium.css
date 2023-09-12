@@ -57,6 +57,10 @@ iframe:hover {
   scale: 1.02;
 } */
 
+.text {
+  margin: 100px 10%;
+}
+
 .email-button {
   display: flex;
   justify-content: center;
@@ -75,7 +79,6 @@ iframe:hover {
 
 .pdf-link {
   display: flex;
-  justify-content: justify;
   align-items: center;
   margin: 20px 0;
 }
@@ -172,10 +175,15 @@ iframe:hover {
   }
 
   main h3 {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   main div p {
     font-size: 14px;
   }
+  
+  .pdf-link span {
+      font-size: 18px;
+  }
 }
+

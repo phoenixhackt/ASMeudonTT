@@ -243,8 +243,9 @@ nav li {
   }
 
   .burger-icon img {
-    width: 10vw;
-    margin: 22px 20px;
+    margin: 19px 20px;
+    width: 50px;
+    height: 40px;
   }
 
   header {

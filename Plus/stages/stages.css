@@ -1,3 +1,8 @@
+main {
+    padding: 0 30px;
+    margin: 50px 0 100px 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,11 +11,6 @@ body {
 
 h1 {
   text-align: center;
-  margin-top: 50px;
-}
-
-.table-container {
-  margin: 20px 40px 100px 40px;
 }
 
 table {
@@ -46,5 +46,26 @@ tr:nth-child(2n) {
 }
 
 @media screen and (max-width: 600px) {
-    
+  main {
+      padding: 10px;
+  }
+  
+  h1 {
+      font-size: 30px;
+  }
 }
+
+@media screen and (max-width: 420px) {
+  main {
+      padding: 5px;
+  }
+  
+  h1 {
+      font-size: 24px;
+  }
+  
+  th,
+  td {
+      padding: 5px;
+}
+

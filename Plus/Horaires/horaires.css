@@ -1,7 +1,7 @@
 main {
   max-width: 960px;
-  margin: 50px auto;
-  padding: 1rem;
+  margin: 20px auto;
+  padding: 40px;
 }
 
 h1 {
@@ -23,7 +23,7 @@ table {
 th,
 td {
   border: 1px solid #000000;
-  padding: 0.5rem;
+  padding: 10px;
   text-align: center;
 }
 
@@ -34,4 +34,21 @@ th {
 
 .lien:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 650px) {
+    main {
+        padding: 20px;
+    }
+    
+    td {
+        font-size: 14px;
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        padding: 3px;
+    }
 }

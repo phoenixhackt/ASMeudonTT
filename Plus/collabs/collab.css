@@ -1,9 +1,5 @@
-body {
-  height: 100vh;
-}
-
 main {
-  width: 45%;
+  max-width: 800px;
   margin: 40px auto 100px auto;
 }
 
@@ -19,7 +15,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 26px;
 }
 
 .division {
@@ -27,10 +23,34 @@ h2 {
 }
 
 .content {
-  font-size: 1.3rem;
+  font-size: 22px;
 }
 
 .icon-new {
   width: 20px;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 900px) {
+    main{
+        padding: 0 30px;
+    }
+    
+    h2 {
+      font-size: 24px;  
+    }
+    
+    .content {
+        font-size: 18px;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        padding: 0 20px;
+    }
 }
