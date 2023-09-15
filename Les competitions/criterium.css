@@ -36,6 +36,7 @@ section img {
   height: 400px;
   width: auto;
   margin: auto;
+  display: flex;
 }
 
 a:hover {

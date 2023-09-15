@@ -133,8 +133,8 @@ video {
 
 #inscription {
   background-color: #d4000d;
-  width: 30%;
-  padding: 10px;
+  width: fit-content;
+  padding: 10px 25px;
   font-size: 36px;
   font-weight: 600;
   color: white;
@@ -161,10 +161,6 @@ video {
 
 /* ========== MEDIA QUERRY ========== */
 @media screen and (max-width: 1400px) {
-  #inscription {
-    width: 50%;
-  }
-
   #titreVideo {
     margin-top: 40px;
   }
@@ -246,10 +242,6 @@ video {
 }
 
 @media screen and (max-width: 900px) {
-  #inscription {
-    width: 70%;
-  }
-
   .titreCategorie {
     font-size: 32px;
   }
@@ -271,7 +263,6 @@ video {
   }
 
   #inscription {
-    width: 80%;
     font-size: 30px;
   }
 
@@ -312,7 +303,7 @@ video {
   }
 
   #inscription {
-    font-size: 21px;
+    font-size: 19px;
   }
 
   #categorie {
