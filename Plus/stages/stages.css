@@ -11,8 +11,48 @@ body {
 
 h1 {
   text-align: center;
+  margin-bottom: 40px;
 }
 
+.stage {
+  max-width: 700px;
+  margin: auto;
+}
+
+.stage h2 {
+  text-decoration: underline;
+}
+
+.stage p,
+.stage ul {
+  margin-left: 10px;
+}
+
+#toussaint {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.group {
+  gap: 5px;
+}
+
+.stage .docx-link {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.download-doc {
+  display: flex;
+  align-items: center;
+}
+
+.download-doc span {
+  font-size: 18px;
+}
+
+/*
 table {
   border: 1px solid #ddd;
   width: 100%;
@@ -44,6 +84,7 @@ th {
 tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
+*/
 
 @media screen and (max-width: 600px) {
   main {
@@ -64,8 +105,8 @@ tr:nth-child(2n) {
     font-size: 24px;
   }
 
-  th,
+  /* th,
   td {
     padding: 5px;
-  }
+  } */
 }
