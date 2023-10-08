@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Baloo Thambi 2";
   src: url("BalooThambi2.woff");
-  font-display: swap
+  font-display: swap;
 }
 
 /* ========== RESET ========== */
@@ -21,6 +21,7 @@ html {
 body {
   font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
   font-weight: 400;
+  max-width: 2000px;
 }
 
 a {
@@ -327,6 +328,17 @@ footer div ul#second li div img {
 
 #brNum {
   display: none;
+}
+
+@media screen and (min-width: 2000px) {
+  html {
+    display: flex;
+    justify-content: center;
+  }
+
+  body {
+    box-shadow: 0px 0 50px 0px #afafaf;
+  }
 }
 
 @media screen and (max-width: 900px) {

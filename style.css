@@ -56,6 +56,7 @@
 #actuContent {
   margin-top: 18px;
   display: flex;
+  height: 325px;
 }
 
 #texteActu {
@@ -133,8 +134,8 @@ video {
 
 #inscription {
   background-color: #d4000d;
-  width: 30%;
-  padding: 10px;
+  width: fit-content;
+  padding: 10px 25px;
   font-size: 36px;
   font-weight: 600;
   color: white;
@@ -161,10 +162,6 @@ video {
 
 /* ========== MEDIA QUERRY ========== */
 @media screen and (max-width: 1400px) {
-  #inscription {
-    width: 50%;
-  }
-
   #titreVideo {
     margin-top: 40px;
   }
@@ -176,8 +173,8 @@ video {
   video {
     width: 70%;
   }
-  
-    video {
+
+  video {
     width: 80%;
   }
 
@@ -195,9 +192,9 @@ video {
   .categorieH3 {
     font-size: 25px;
   }
-  
+
   .categorieImg {
-      width: 480px;
+    width: 480px;
   }
 }
 
@@ -233,6 +230,10 @@ video {
     margin: 0;
   }
 
+  #actuContent {
+    height: 300px;
+  }
+
   #aVenir {
     margin-top: 30px;
     width: 100%;
@@ -246,10 +247,6 @@ video {
 }
 
 @media screen and (max-width: 900px) {
-  #inscription {
-    width: 70%;
-  }
-
   .titreCategorie {
     font-size: 32px;
   }
@@ -263,6 +260,10 @@ video {
   #texteActu {
     width: 100%;
   }
+
+  #actuContent {
+    height: 250px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -271,7 +272,6 @@ video {
   }
 
   #inscription {
-    width: 80%;
     font-size: 30px;
   }
 
@@ -294,13 +294,13 @@ video {
     font-size: 19px;
     font-weight: 600;
   }
-  
+
   .categorieDiv {
-      width: 350px;
+    width: 350px;
   }
-  
+
   .categorieImg {
-      width: 350px;
+    width: 350px;
   }
 
   #imgAccueil {
@@ -312,11 +312,15 @@ video {
   }
 
   #inscription {
-    font-size: 21px;
+    font-size: 19px;
   }
 
   #categorie {
     margin-top: 100px;
+  }
+
+  #actuContent {
+    height: auto;
   }
 }
 
@@ -328,16 +332,16 @@ video {
   #categorie {
     margin-top: 70px;
   }
-  
+
   .categorieDiv {
-      width: 300px;
+    width: 300px;
   }
-  
+
   .categorieImg {
-      width: 300px;
+    width: 300px;
   }
-  
+
   #imgAccueil2 {
-      width: 75%;
+    width: 75%;
   }
 }
