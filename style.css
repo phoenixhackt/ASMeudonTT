@@ -83,17 +83,13 @@
 }
 
 #event {
+  margin-top: 18px;
   width: 92%;
 }
 
-#evenement1,
-#evenement2,
-#evenement3 {
-  margin-bottom: 30px;
-}
-
-#evenement1 {
+#evenement {
   margin-top: 18px;
+  margin-bottom: 30px;
 }
 
 /* ========== VIDEO STAGE ========== */
@@ -173,8 +169,8 @@ video {
   video {
     width: 70%;
   }
-  
-    video {
+
+  video {
     width: 80%;
   }
 
@@ -192,9 +188,9 @@ video {
   .categorieH3 {
     font-size: 25px;
   }
-  
+
   .categorieImg {
-      width: 480px;
+    width: 480px;
   }
 }
 
@@ -229,9 +225,9 @@ video {
   #actualite {
     margin: 0;
   }
-  
+
   #actuContent {
-      height: 300px;
+    height: 300px;
   }
 
   #aVenir {
@@ -260,9 +256,9 @@ video {
   #texteActu {
     width: 100%;
   }
-  
+
   #actuContent {
-      height: 250px;
+    height: 250px;
   }
 }
 
@@ -294,13 +290,13 @@ video {
     font-size: 19px;
     font-weight: 600;
   }
-  
+
   .categorieDiv {
-      width: 350px;
+    width: 350px;
   }
-  
+
   .categorieImg {
-      width: 350px;
+    width: 350px;
   }
 
   #imgAccueil {
@@ -318,9 +314,9 @@ video {
   #categorie {
     margin-top: 100px;
   }
-  
+
   #actuContent {
-      height: auto;
+    height: auto;
   }
 }
 
@@ -332,16 +328,16 @@ video {
   #categorie {
     margin-top: 70px;
   }
-  
+
   .categorieDiv {
-      width: 300px;
+    width: 300px;
   }
-  
+
   .categorieImg {
-      width: 300px;
+    width: 300px;
   }
-  
+
   #imgAccueil2 {
-      width: 75%;
+    width: 75%;
   }
 }

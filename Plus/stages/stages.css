@@ -28,7 +28,7 @@ h1 {
   margin-left: 10px;
 }
 
-#toussaint {
+.stage-title {
   display: flex;
   flex-direction: column;
   gap: 20px;
