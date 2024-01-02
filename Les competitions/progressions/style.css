@@ -1,37 +1,42 @@
-@keyframes loader {
-  0% {
-    transform: translateX(-600px);
-  }
-
-  100% {
-    transform: translateX(0px);
-  }
-}
-
-.loaderDiv {
+/* loader */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - (95px + 220px));
+  z-index: 9999;
 }
 
-.loaderDiv p {
-  margin: 0 10px;
+#loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
 }
 
-.container {
-  width: 600px;
-  border: 2px solid black;
-  height: 25px;
-  overflow: hidden;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.loader {
-  width: 600px;
-  height: 21px;
-  background-color: green;
-  transform: translateX(-600px);
-  animation: loader 15s linear infinite;
+#content {
+  display: none;
+}
+
+/* Table styles */
+.tables {
+  display: none;
 }
 
 .joueurs-table {
