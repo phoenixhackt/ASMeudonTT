@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progression</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
-    <link rel="stylesheet" href="progressions.css">
     <link rel="stylesheet" href="../../global.css">
     <link rel="stylesheet" href="style.css">
 
@@ -47,6 +46,14 @@
                 </li>
                 <li>
                     <a href="#">Les Compétitions</a>
+                    <ul>
+                        <li>
+                            <a href="../criterium/criterium.html">Criterium</a>
+                        </li>
+                        <li>
+                            <a href="#">Progressions</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">Plus</a>
