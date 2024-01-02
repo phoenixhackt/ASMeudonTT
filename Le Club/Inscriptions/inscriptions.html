@@ -22,9 +22,9 @@
     <script defer src="../../header.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header>
       <div id="asMeudon">
-        <a href=""
+        <a href="#"
           ><span id="asMeudon1">AS</span><span id="asMeudon2">Meudon TT</span>
         </a>
       </div>
@@ -35,19 +35,23 @@
             <a href="#">Le Club</a>
             <ul>
               <li>
-                <a href="#">Inscriptions</a>
+                <a href="../../Le Club/Inscriptions/inscriptions.html"
+                  >Inscriptions</a
+                >
               </li>
               <li><a href="../../Le Club/Lieu/lieu.html">Lieu</a></li>
               <li>
-                <a
-                  href="../../Le Club/Entraîneurs et dirigeants/entraineurs.html"
-                  >Entraîneurs et dirigeants</a
-                >
+                <a href="../../Le Club/Entraîneurs et dirigeants/entraineurs.html">Entraîneurs et dirigeants</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="../../Les competitions/criterium.html">Les Compétitions</a>
+            <a href="#">Les Compétitions</a>
+          
+            <ul>
+              <li><a href="../../Les competitions/criterium/criterium.html">Criterium</a></li>
+              <li><a href="../../Les competitions/progressions/progressions.php">Progressions</a></li>
+            </ul>
           </li>
           <li>
             <a href="#">Plus</a>
@@ -61,7 +65,11 @@
             </ul>
           </li>
           <li>
-            <a id="buttonInscription" href="#">S'inscrire</a>
+            <a
+              id="buttonInscription"
+              href="../../Le Club/Inscriptions/inscriptions.html"
+              >S'inscrire</a
+            >
           </li>
         </ul>
       </nav>
@@ -83,21 +91,28 @@
                 <a class="aSidenav" href="../../Le Club/Lieu/lieu.html">Lieu</a>
               </li>
               <li>
-                <a
-                  id="entraineurLong"
-                  class="aSidenav"
-                  href="../../Le Club/Entraîneurs et dirigeants/entraineurs.html"
+                <a id="entraineurLong" class="aSidenav" href="../../Le Club/Entraîneurs et dirigeants/entraineurs.html"
                   >Entraîneurs et dirigeants</a
                 >
               </li>
             </ul>
-            <li>
-              <a
-                class="aPrincipaux"
-                href="../../Les competitions/criterium.html"
-                >Les Compétitions</a
-              >
-            </li>
+            <li><a class="aPrincipaux" href="#">Les Compétitions</a></li>
+            <ul class="sousNav">
+              <li>
+                <a
+                  class="aSidenav"
+                  href="../../Les competitions/criterium/criterium.html"
+                  >Criterium</a
+                >
+              </li>
+              <li>
+                <a
+                  class="aSidenav"
+                  href="../../Les competitions/progressions/progressions.php"
+                  >Progressions</a
+                >
+              </li>
+            </ul>
             <li><a class="aPrincipaux" href="#">Plus</a></li>
             <ul class="sousNav">
               <li>
@@ -127,7 +142,7 @@
           <div class="burger-icon">
             <img
               src="../../images/icon-burger.png"
-              alt="Buger Icon"
+              alt="Burger Icon"
               loading="lazy"
             />
           </div>
