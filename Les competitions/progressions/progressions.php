@@ -17,7 +17,7 @@
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
     <script src="https://cdn.datatables.net/plug-ins/1.13.7/sorting/any-number.js"></script>
     <script src="https://cdn.datatables.net/plug-ins/1.13.7/filtering/row-based/TableTools.ShowSelectedOnly.js"></script>
-    <script src="../../header.js"></script>
+    <script defer src="../../header.js"></script>
 
     <!-- htmx -->
     <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
