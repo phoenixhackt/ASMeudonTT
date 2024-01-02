@@ -58,6 +58,11 @@
                 </li>
                 <li>
                     <a href="#">Les Compétitions</a>
+
+                    <ul>
+                        <li><a href="../criterium/criterium.html">Criterium</a></li>
+                        <li><a href="#">Progressions</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">Plus</a>
@@ -92,9 +97,15 @@
                             <a id="entraineurLong" class="aSidenav" href="../../Le Club/Entraîneurs et dirigeants/entraineurs.html">Entraîneurs et dirigeants</a>
                         </li>
                     </ul>
-                    <li>
-                        <a class="aPrincipaux" href="#">Les Compétitions</a>
-                    </li>
+                    <li><a class="aPrincipaux" href="#">Les Compétitions</a></li>
+                    <ul class="sousNav">
+                        <li>
+                            <a class="aSidenav" href="#">Criterium</a>
+                        </li>
+                        <li>
+                            <a class="aSidenav" href="../../Les competitions/progressions/progressions.php">Progressions</a>
+                        </li>
+                    </ul>
                     <li><a class="aPrincipaux" href="#">Plus</a></li>
                     <ul class="sousNav">
                         <li>
