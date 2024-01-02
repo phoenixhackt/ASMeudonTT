@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
     <link rel="stylesheet" href="progressions.css">
     <link rel="stylesheet" href="../../global.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Move jQuery to the end of the body -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -21,18 +22,6 @@
 
     <!-- htmx -->
     <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Sélectionnez l'image loader GIF après que le DOM soit chargé
-            var loader = document.querySelector('.loader');
-
-            // Définissez un délai de 10 secondes pour masquer le loader
-            setTimeout(function() {
-                loader.style.display = 'none';
-            }, 10000);
-        });
-    </script>
 </head>
 
 <body>
@@ -58,11 +47,6 @@
                 </li>
                 <li>
                     <a href="#">Les Compétitions</a>
-
-                    <ul>
-                        <li><a href="../criterium/criterium.html">Criterium</a></li>
-                        <li><a href="#">Progressions</a></li>
-                    </ul>
                 </li>
                 <li>
                     <a href="#">Plus</a>
@@ -97,15 +81,9 @@
                             <a id="entraineurLong" class="aSidenav" href="../../Le Club/Entraîneurs et dirigeants/entraineurs.html">Entraîneurs et dirigeants</a>
                         </li>
                     </ul>
-                    <li><a class="aPrincipaux" href="#">Les Compétitions</a></li>
-                    <ul class="sousNav">
-                        <li>
-                            <a class="aSidenav" href="#">Criterium</a>
-                        </li>
-                        <li>
-                            <a class="aSidenav" href="../../Les competitions/progressions/progressions.php">Progressions</a>
-                        </li>
-                    </ul>
+                    <li>
+                        <a class="aPrincipaux" href="#">Les Compétitions</a>
+                    </li>
                     <li><a class="aPrincipaux" href="#">Plus</a></li>
                     <ul class="sousNav">
                         <li>
@@ -132,11 +110,27 @@
     </header>
 
     <main>
-        <!-- Utilisez une balise img pour l'image GIF -->
-        <img class="loader" src="img/loader.gif" alt="Loader">
+        <div class="loaderDiv">
+            <p>0%</p>
+            <div class="container">
+                <div class="loader"></div>
+            </div>
+            <p>100%</p>
+        </div>
+
+        <script defer>
+            document.addEventListener("DOMContentLoaded", function() {
+            // Sélectionnez l'image loader GIF après que le DOM soit chargé
+            var loader = document.querySelector('.loaderDiv');
+
+            // Définissez un délai de 10 secondes pour masquer le loader
+            setTimeout(function() {
+                loader.style.display = 'none';
+            }, 15000);
+            });
+        </script>
 
         <div hx-get="loaddata.php" hx-trigger="load delay:0.1s" hx-swap="outerHTML">
-
         </div>
     </main>
 
