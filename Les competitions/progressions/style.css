@@ -41,19 +41,23 @@
 /* Table styles */
 .tables {
   display: none;
-  margin: 50px 250px;
+  max-width: 1000px;
+  margin: 50px auto;
 }
 
 .joueurs-table {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
+  border-collapse: collapse !important;
   width: 100%;
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif !important;
+  padding: 15px; /* Ajout du padding */
+  box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur totale */
 }
 
 .joueurs-table td,
 .joueurs-table th {
   border: 1px solid #ddd;
   padding: 8px;
+  box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur totale */
 }
 
 .joueurs-table tr:nth-child(even) {
@@ -70,4 +74,31 @@
   text-align: left;
   background-color: #0e9bf7;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2; /* Pour s'assurer que le header reste au-dessus du contenu défilant */
+}
+
+.joueurs-table tfoot th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0e9bf7;
+  color: white;
+  position: sticky;
+  bottom: 0;
+  z-index: 2; /* Pour s'assurer que le footer reste au-dessus du contenu défilant */
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  .joueurs-table th,
+  .joueurs-table td {
+    font-size: 14px;
+  }
+
+  .joueurs-table th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }

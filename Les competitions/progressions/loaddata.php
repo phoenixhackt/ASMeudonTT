@@ -69,9 +69,7 @@
                 <th>Licence</th>
                 <th>Sexe</th>
                 <th>Classement</th>
-                <th>Certification</th>
                 <th>Catégorie d'âge</th>
-                <th>Type de licence</th>
                 <th>Progression Annuelle</th>
                 <th>Progression Mensuelle</th>
             </tr>
@@ -84,9 +82,7 @@
                     <td><?= $joueur['details']['licence'] ?></td>
                     <td><?= formatSexe($joueur['details']['sexe']) ?></td>
                     <td><?= $joueur['details']['point'] ?></td>
-                    <td><?= $joueur['details']['certif'] ?></td>
                     <td><?= $joueur['details']['cat'] ?></td>
-                    <td><?= formatTypeLicence($joueur['details']['type']) ?></td>
                     <td><?= $joueur['progann'] ?></td>
                     <td><?= $joueur['progmois'] ?></td>
                 </tr>
@@ -104,9 +100,7 @@
                 <th>Licence</th>
                 <th>Sexe</th>
                 <th>Classement</th>
-                <th>Certification</th>
                 <th>Catégorie d'âge</th>
-                <th>Type de licence</th>
                 <th>Progression Annuelle</th>
             </tr>
         </thead>
@@ -118,9 +112,7 @@
                     <td><?= $joueur['details']['licence'] ?></td>
                     <td><?= formatSexe($joueur['details']['sexe']) ?></td>
                     <td><?= $joueur['details']['point'] ?></td>
-                    <td><?= $joueur['details']['certif'] ?></td>
                     <td><?= $joueur['details']['cat'] ?></td>
-                    <td><?= formatTypeLicence($joueur['details']['type']) ?></td>
                     <td><?= $joueur['progann'] ?></td>
                 </tr>
             <?php endforeach; ?>
@@ -137,9 +129,7 @@
                 <th>Licence</th>
                 <th>Sexe</th>
                 <th>Classement</th>
-                <th>Certification</th>
                 <th>Catégorie d'âge</th>
-                <th>Type de licence</th>
                 <th>Progression Mensuelle</th>
             </tr>
         </thead>
@@ -151,9 +141,7 @@
                     <td><?= $joueur['details']['licence'] ?></td>
                     <td><?= formatSexe($joueur['details']['sexe']) ?></td>
                     <td><?= $joueur['details']['point'] ?></td>
-                    <td><?= $joueur['details']['certif'] ?></td>
                     <td><?= $joueur['details']['cat'] ?></td>
-                    <td><?= formatTypeLicence($joueur['details']['type']) ?></td>
                     <td><?= $joueur['progmois'] ?></td>
                 </tr>
             <?php endforeach; ?>
@@ -165,7 +153,7 @@
             $('#joueurs-table-all').DataTable({
                 columnDefs: [{
                         type: 'any-number',
-                        targets: 8
+                        targets: 6
                     } // La colonne "Progression Annuelle" est à l'index 8
                 ]
             });
@@ -177,12 +165,6 @@
     function formatSexe($sexe)
     {
         return ($sexe === MALE) ? '<p style="color: blue;">♂</p>' : '<p style="color: red;">♀</p>';
-    }
-
-    // Fonction pour formater le type de licence
-    function formatTypeLicence($type)
-    {
-        return ($type === TRADITIONNELLE) ? 'T' : 'P';
     }
     ?>
 </div>
