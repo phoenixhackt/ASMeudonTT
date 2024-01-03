@@ -41,7 +41,10 @@
                             <a href="../../criterium/criterium.html">Criterium</a>
                         </li>
                         <li>
-                            <a href="#">Progressions</a>
+                            <a href="../../progressions/progressions.php">Progressions</a>
+                        </li>
+                        <li>
+                            <a href="../../championnat_par_equipes/championnat_par_equipes.php">Championnat par equipes</a>
                         </li>
                     </ul>
                 </li>
@@ -81,10 +84,13 @@
                     <li><a class="aPrincipaux" href="#">Les Compétitions</a></li>
                     <ul class="sousNav">
                         <li>
-                            <a class="aSidenav" href="Les competitions/criterium/criterium.html">Criterium</a>
+                            <a class="aSidenav" href="../../criterium/criterium.html">Criterium</a>
                         </li>
                         <li>
-                            <a class="aSidenav" href="Les competitions/progressions/progressions.php">Progressions</a>
+                            <a class="aSidenav" href="../../progressions/progressions.php">Progressions</a>
+                        </li>
+                        <li>
+                            <a class="aSidenav" href="../../championnat_par_equipes/equipes.php">Championnat par equipes</a>
                         </li>
                     </ul>
                     <li><a class="aPrincipaux" href="#">Plus</a></li>
