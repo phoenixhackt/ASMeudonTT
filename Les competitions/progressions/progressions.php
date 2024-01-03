@@ -57,7 +57,7 @@
                             <a href="#">Progressions</a>
                         </li>
                         <li>
-                            <a href="../championnat/championnat.html">Championnat par equipes</a>
+                            <a href="../championnat_par_equipes/equipes.php">Championnat par equipes</a>
                         </li>
                     </ul>
                 </li>
@@ -103,7 +103,7 @@
                             <a class="aSidenav" href="../progressions/progressions.php">Progressions</a>
                         </li>
                         <li>
-                            <a class="aSidenav" href="../championnat/championnat.html">Championnat par equipes</a>
+                            <a class="aSidenav" href="../championnat_par_equipes/equipes.php">Championnat par equipes</a>
                         </li>
                     </ul>
                     <li><a class="aPrincipaux" href="#">Plus</a></li>
