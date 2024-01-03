@@ -4,23 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progression</title>
+    <title>AS Meudon Tennis de Table - Progression</title>
+    <meta name="description" content="Suivez la progression du classement des joeurs de tennis de table au sein du club AS Meudon. Consultez les données de manière interactive grâce à des tableaux dynamiques.">
+    <meta name="author" content="index.html">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
     <link rel="stylesheet" href="../../global.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
 
     <!-- Move jQuery to the end of the body -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <!-- Combined JS -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
-    <script src="https://cdn.datatables.net/plug-ins/1.13.7/sorting/any-number.js"></script>
-    <script src="https://cdn.datatables.net/plug-ins/1.13.7/filtering/row-based/TableTools.ShowSelectedOnly.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <script defer src="https://cdn.datatables.net/plug-ins/1.13.7/sorting/any-number.js"></script>
+    <script defer src="https://cdn.datatables.net/plug-ins/1.13.7/filtering/row-based/TableTools.ShowSelectedOnly.js"></script>
     <script defer src="../../header.js"></script>
 
     <!-- htmx -->
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -88,9 +91,15 @@
                             <a id="entraineurLong" class="aSidenav" href="../../Le Club/Entraîneurs et dirigeants/entraineurs.html">Entraîneurs et dirigeants</a>
                         </li>
                     </ul>
-                    <li>
-                        <a class="aPrincipaux" href="#">Les Compétitions</a>
-                    </li>
+                    <li><a class="aPrincipaux" href="#">Les Compétitions</a></li>
+                    <ul class="sousNav">
+                        <li>
+                            <a class="aSidenav" href="Les competitions/criterium/criterium.html">Criterium</a>
+                        </li>
+                        <li>
+                            <a class="aSidenav" href="Les competitions/progressions/progressions.php">Progressions</a>
+                        </li>
+                    </ul>
                     <li><a class="aPrincipaux" href="#">Plus</a></li>
                     <ul class="sousNav">
                         <li>
@@ -123,14 +132,14 @@
         </div>
         <div class="precontent">
         </div>
-                
+
         <div class="tables">
             <div hx-get="loaddata.php" hx-trigger="load delay:0.1s" hx-swap="outerHTML">
             </div>
         </div>
 
         <script>
-            document.addEventListener("htmx:afterRequest", function () {
+            document.addEventListener("htmx:afterRequest", function() {
                 // Hide the loader and show the content after each htmx request
                 const loaderWrapper = document.getElementById("loader-wrapper");
                 const preContent = document.querySelector(".precontent");

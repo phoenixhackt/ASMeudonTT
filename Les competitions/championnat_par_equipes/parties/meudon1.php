@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AS Meudon Tennis de Table - Résultats Meudon AS 3</title>
+    <title>AS Meudon Tennis de Table - Résultats Meudon AS 1</title>
     <meta name="description" content="Découvrez les résultats des rencontres de tennis de table à Meudon. Suivez l'actualité et les événements du club AS Meudon TT.">
     <meta name="author" content="Gary Lacroix && Maxence Pruvost && Antonin Pruvost">
     <link rel="stylesheet" href="style.css">
@@ -127,8 +127,8 @@
         $service->initialization();
 
         // Remplacez NUMERO_CLUB par le numéro de votre club
-        $getPouleClassement = $service->getPouleClassement('125705', '655053');
-        $getPouleRencontres = $service->getPouleRencontres('125705', '655053');
+        $getPouleClassement = $service->getPouleClassement('126126', '656628');
+        $getPouleRencontres = $service->getPouleRencontres('126126', '656628');
         ?>
 
         <h2>Résultats des Rencontres</h2>
