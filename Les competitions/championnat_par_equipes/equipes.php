@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../global.css">
     <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../images/favicon.webp" type="image/x-icon">
     <script src="../../header.js" defer></script>
 </head>
 

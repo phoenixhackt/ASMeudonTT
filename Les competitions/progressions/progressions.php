@@ -12,14 +12,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
 
-    <!-- Move jQuery to the end of the body -->
-    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <!-- Combined JS -->
-    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script defer src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
-    <script defer src="https://cdn.datatables.net/plug-ins/1.13.7/sorting/any-number.js"></script>
-    <script defer src="https://cdn.datatables.net/plug-ins/1.13.7/filtering/row-based/TableTools.ShowSelectedOnly.js"></script>
     <script defer src="../../header.js"></script>
 
     <!-- htmx -->

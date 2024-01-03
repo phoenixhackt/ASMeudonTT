@@ -148,18 +148,6 @@
         </tbody>
     </table>
 
-    <script>
-        $(document).ready(function() {
-            $('#joueurs-table-all').DataTable({
-                columnDefs: [{
-                        type: 'any-number',
-                        targets: 6
-                    } // La colonne "Progression Annuelle" est à l'index 8
-                ]
-            });
-        });
-    </script>
-
     <?php
     // Fonction pour formater le sexe
     function formatSexe($sexe)
