@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
     <link rel="stylesheet" href="../../global.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../images/favicon.webp" type="image/x-icon">
 
     <script defer src="../../header.js"></script>
 
