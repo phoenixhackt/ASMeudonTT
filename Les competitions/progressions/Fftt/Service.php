@@ -355,24 +355,6 @@ class Service
         });
     }
 
-    public function getLicenceAndProgression($licence)
-    {
-        // Récupérer les données de la licence et du joueur en utilisant la mise en cache
-        $licenceData = $this->getLicence($licence);
-        $joueurData = $this->getJoueur($licence);
-
-        // Vérifier si les deux ensembles de données ont été récupérés avec succès
-        if ($licenceData && $joueurData) {
-            // Fusionner les tableaux en privilégiant les données de joueur pour les clés en double
-            $combinedData = array_merge($licenceData, $joueurData);
-        } else {
-            // Si l'une des données n'est pas disponible, retourner null
-            return null;
-        }
-
-        return $combinedData;
-    }
-
     protected function getCachedData($key, $lifeTime, $callback)
     {
         if (!$this->cache) {
