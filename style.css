@@ -1,0 +1,22 @@
+@import url(reset.css);
+@import url(font-size.css);
+
+:root {
+    --color-main-1: #312783;
+    --color-main-2: #d4000d;
+    --color-bg-light: #ffffff;
+    --color-bg-secondary: #ededed;
+}
+
+#logo span:first-child {
+    color: var(--color-main-1);
+}
+
+#logo span:nth-child(2) {
+    color: var(--color-main-2);
+}
+
+#burger-menu {
+    width: 32px;
+    height: 32px;
+}
